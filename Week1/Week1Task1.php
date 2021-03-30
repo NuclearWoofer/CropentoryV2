@@ -1,17 +1,15 @@
-<?php 
-    
-    $animals = [
-        'Leopard Geckos',
-        'Chickens',
-        'Cats',
-        'Cows'
-    ];
-    
+<?php
 
-    
-    foreach($aninmals as $animal){
-        echo $animal;
-    }
+$animals = [
+    'Chickens',
+    'Cats',
+    'Geckos',
+    'Frogs',
+    'Pangolins'
+];
 
-    
-?>
+
+//ctrl + F9 
+
+
+require 'index.view.php';
