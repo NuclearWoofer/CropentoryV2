@@ -11,7 +11,7 @@
         "command": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
       },
       "args": [
-        "http://localhost:81/erik/${relativeFile}"
+        "http://localhost:81/MICHAEL/${relativeFile}"
       ],
       "presentation": {
         "echo": false,
