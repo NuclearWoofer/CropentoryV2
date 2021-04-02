@@ -8,10 +8,11 @@
 
 <body>
 
+<h1> Task List </h1>
     <ul>
         <?php foreach ($tasks as $task) : ?> 
             <?php foreach ($task as $key => $val) : ?>
-            <ul><strong><?= $key; ?></strong> <?= $val; ?></ul>
+            <ul><strong><?= ucwords($key); ?>: </strong> <?= $val; ?></ul>
             <?php endforeach?>
         <?php endforeach?>
     </ul>
