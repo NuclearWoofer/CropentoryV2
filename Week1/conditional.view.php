@@ -34,7 +34,7 @@
                 
                 echo 'Incomplete';
             }
-            
+
             // SHORT HAND
 
             //<?= $task['completed'] ? 'Complete' : 'Incomplete'; 
