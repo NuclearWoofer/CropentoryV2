@@ -23,7 +23,7 @@
         <li> 
             
             <strong>Status: </strong> 
-            <?php 
+            <?php
             //  LONG HAND
 
             if ($task['completed']){
