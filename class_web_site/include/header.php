@@ -79,7 +79,7 @@ li {
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content" id="myDropdown">
-      <a href="../Week1/fizzBuzz.php">Assignment 1</a>
+      <a href="../Week1/fizzBuzz.php">Assignment 1 - Fizz Buzz</a>
       <a href="../week2/index.php">Assignment 2</a>
       <a href="../week3/index.php">Assignment 3</a>
       <a href="../week4/index.php">Assignment 4</a>
