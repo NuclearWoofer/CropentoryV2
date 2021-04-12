@@ -1,8 +1,8 @@
 <?php include __DIR__ . '/../include/header.php'; ?>
     
-<h1>PHP and MySQL - Erik van Renselaar</h1>
+<h1>SE266 - PHP - Michael Lopez</h1>
 <p>
-Welcome to my PHP and MySQL page. You can find an overview of all my working PHP projects along with my code.
+Welcome to my PHP page. You can find an overview of all my working PHP projects along with my code.
 </p>
 <h2>Assignment Overview</h2>
 
