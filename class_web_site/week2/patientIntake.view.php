@@ -126,3 +126,5 @@ window.onclick = function(e) {
 </body>
 
 </html>
+
+<?php include __DIR__ . '/../include/footer.php'; ?>
