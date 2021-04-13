@@ -1,3 +1,5 @@
+<?php include __DIR__ . '/../include/header.php'; ?>
+
 <?php
 
 //A foreach loop that goes between 1 and 100.
@@ -21,3 +23,5 @@ foreach(range(1, 100) as $number){
         echo $number, '<br>';
     }
 }
+
+include __DIR__ . '/../include/footer.php'; ?>
