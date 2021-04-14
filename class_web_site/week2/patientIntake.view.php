@@ -8,25 +8,8 @@
   <title>Patient Intake Form - Michael Lopez</title>
 
   <?php include __DIR__ . '/../include/header.php'; ?>  <!--Directory-->
-<script>
 
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function dropDown() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-</script>
     <style type="text/css">
        .wrapper {
             display: grid;
@@ -56,13 +39,13 @@ window.onclick = function(e) {
                 <label>First Name:</label>
             </div>
             <div>
-                <input type="text" name="first_name" value="" />
+                <input type="text" name="fName" value="" />
             </div>
             <div class="label">
                 <label>Last Name:</label>
             </div>
             <div>
-                <input type="text" name="last_name" value="" />
+                <input type="text" name="lName" value="" />
             </div>
             <div class="label">
                 <label>Married:</label>
