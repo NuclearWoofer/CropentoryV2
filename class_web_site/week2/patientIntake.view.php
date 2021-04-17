@@ -92,7 +92,7 @@
                 &nbsp;
             </div>
             <div>
-                <input type="submit" name="storePatient" value="Store Patient Information" />
+                <input type="submit" name="submitBtn" value="Store Patient Information" />
             </div>
            
         </div>

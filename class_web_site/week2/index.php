@@ -1,5 +1,8 @@
 <?php
 
+$fnameErr = $lNameErr = $emailErr = $genderErr = $websiteErr = "";
+$fname = $lName = $email = $gender = $comment = $website = "";
+
 require "patientIntake.view.php";
 
 function age($bdate){
