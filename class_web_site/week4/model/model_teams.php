@@ -2,7 +2,6 @@
 
     include (__DIR__ . '/db.php');
     
-    
     function getTeams () {
         global $db;
         
@@ -17,8 +16,6 @@
          
          return ($results);
     }
-    
-  
     
     function addTeam ($t, $d) {
         global $db;
@@ -60,8 +57,8 @@
     }
    
     
-    //   $result = addTeam2 ('Ajax', 'Eredivisie');
-    //   echo $result;
+       //$result = addTeam2 ('Ajax', 'Eredivisie');
+       //echo $result;
     
     
 
