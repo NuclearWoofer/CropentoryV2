@@ -8,7 +8,7 @@ Welcome to my PHP page. You can find an overview of all my working PHP projects 
 
   <ul>
     <li><a href="../Week1/fizzBuzz.php">Week 1</a></li>
-    <li><a href="../week2/index.php">Week 2</a></li>
+    <li><a href="../week2/patientIntake.view.php">Week 2</a></li>
     <li><a href="../week3/index.php">Week 3</a></li>
     <li><a href="../week4/index.php">Week 4</a></li>
     <li><a href="../week5/index.php">Week 5</a></li>

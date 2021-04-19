@@ -1,3 +1,5 @@
+<?php include __DIR__ . '/../include/header.php'; ?>
+
 <!DOCTYPE HTML>  
 <html>
 <head>
@@ -61,6 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     $weight = test_input($_POST["weight"]);
 }
+//birthday error
 if (empty($_POST["bday"])) {
   $bdayErr = "bday is required";
 } else {
@@ -144,7 +147,7 @@ echo "Weight: ", $weight, "lbs";
 echo "<br>";
 echo "Birthdate: ", $bday;
 
-?>
+include __DIR__ . '/../include/footer.php'; ?>
 
 </body>
 </html>
