@@ -6,17 +6,21 @@
 
 function fizzBuzz($num)
 {
-    if ($num % 3 === 0) {
+    if ($num % 2 === 0 && $num % 3 === 0){
+        return ("FizzBuzz");
+
+    }
+    
+    if ($num % 2 === 0) {
         return ("Fizz");
     }
     
-    if ($num % 5 === 0){
+    if ($num % 3 === 0){
         return ("Buzz");
     }
 
-    if ($num % 3 === 0 && $num % 5 === 0){
-        return ("FizzBuzz");
-    }
+
+    
 
     return ($num);
 }
