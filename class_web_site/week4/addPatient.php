@@ -4,9 +4,10 @@
         include __DIR__ . '/functions.php';
        if (isPostRequest()) {
         $patientFirstName = filter_input(INPUT_POST, 'patientFirstName');
-        $patientLastName = filter_input(INPUT_POST, 'patientFirstName');
+        $patientLastName = filter_input(INPUT_POST, 'patientLastName');
         $patientMarried = filter_input(INPUT_POST, 'patientMarried');
         $patientBirthDate = filter_input(INPUT_POST, 'patientBirthDate');
+        
 
            
            $result = addPatient ($patientFirstName, $patientLastName, $patientMarried, $patientBirthDate);

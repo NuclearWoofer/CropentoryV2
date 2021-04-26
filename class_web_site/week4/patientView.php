@@ -28,6 +28,9 @@
                     <th>ID</th>
                     <th>Patient First Name</th>
                     <th>Patient Last Name</th>
+                    <th>Married?</th>
+                    <th>Birth Date</th>
+                    <th>Age</th>
                 </tr>
             </thead>
             <tbody>
