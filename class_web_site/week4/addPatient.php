@@ -1,3 +1,5 @@
+<?php include __DIR__ . '/../include/header.php'; ?>
+
 <?php
         
         include __DIR__ . '/model_patients.php';
@@ -78,6 +80,11 @@
   
   <div class="col-sm-offset-2 col-sm-10"><a href="./patientView.php">View Patients</a></div>
 </div>
+ 
+
+<?php include __DIR__ . '/../include/footer.php'; ?>
+
 
 </body>
 </html>
+

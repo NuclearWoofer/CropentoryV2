@@ -10,7 +10,7 @@ Welcome to my PHP page. You can find an overview of all my working PHP projects 
     <li><a href="../Week1/fizzBuzz.php">Week 1</a></li>
     <li><a href="../week2/patientIntake.view.php">Week 2</a></li>
     <li><a href="../week3/index.php">Week 3</a></li>
-    <li><a href="../week4/index.php">Week 4</a></li>
+    <li><a href="../week4/patientView.php">Week 4</a></li>
     <li><a href="../week5/index.php">Week 5</a></li>
     <li><a href="../week6/index.php">Week 6</a></li>
     <li><a href="../week7/index.php">Week 7</a></li>
