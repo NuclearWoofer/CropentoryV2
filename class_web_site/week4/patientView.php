@@ -37,7 +37,7 @@
                     <th>Patient Last Name</th>
                     <th>Married?</th>
                     <th>Birth Date</th>
-                    <th>Age</th>
+                    <!--<th>Age</th>-->
                     <th>Edit</th>
                 </tr>
             </thead>
