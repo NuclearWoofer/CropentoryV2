@@ -32,13 +32,13 @@
     <div class="form-group">
       <label class="control-label col-sm-2" for="team name">Team Name:</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="team" placeholder="Enter team name" name="team">
+        <input type="text" class="form-group" id="team" placeholder="Enter team name" name="team">
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">Division:</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="division" placeholder="Enter division" name="division">
+        <input type="text" class="form-group" id="division" placeholder="Enter division" name="division">
       </div>
     </div>
     

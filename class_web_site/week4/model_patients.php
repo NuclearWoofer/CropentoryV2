@@ -37,6 +37,62 @@
         return ($results);
     }
 
+    function updatePatient ($id, $patientFirstName, $patientLastName, $patientMarried, $patientBirthDate) {
+        global $db;
+
+        $result = "";
+        
+        $stmt = $db->prepare("UPDATE patients SET patientFirstName = :patientFirstName, patientLastName = :patientLastName, patientMarried = :patientMarried, patientBirthDate = :patientBirthDate WHERE id =:id");
+        
+        $stmt->bindValue(':id', $id);
+        $stmt->bindValue(':patientFirstName', $patientFirstName);
+        $stmt->bindValue(':patientLastName', $patientLastName);
+        $stmt->bindValue(':patientMarried', $patientMarried);
+        $stmt->bindValue(':patientBirthDate', $patientBirthDate);
+
+      
+        if ($stmt->execute() && $stmt->rowCount() > 0) {
+            $result = 'Data Updated';
+        }
+        
+        return ($result);
+    }
     
+   
+    
+    
+    function deletePatient ($id) {
+        global $db;
+        
+        $results = "Data was not deleted";
+    
+        $stmt = $db->prepare("DELETE FROM patients WHERE id=:id");
+        
+        $stmt->bindValue(':id', $id);
+            
+        if ($stmt->execute() && $stmt->rowCount() > 0) {
+            $results = 'Data Deleted';
+        }
+        
+        return ($results);
+    }
+   
+    function getPatient ($id) {
+         global $db;
+        
+        $results = [];
+        
+        $stmt = $db->prepare("SELECT id, patientFirstName, patientLastName, patientMarried, patientBirthDate FROM patients WHERE id=:id");
+        $stmt->bindValue(':id', $id);
+       
+        if ( $stmt->execute() && $stmt->rowCount() > 0 ) {
+             $results = $stmt->fetch(PDO::FETCH_ASSOC);
+                        
+         }
+         
+         return ($results);
+    }
+
+   
 
 ?>

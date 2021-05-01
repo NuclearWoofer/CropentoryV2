@@ -1,12 +1,17 @@
 <?php include __DIR__ . '/../include/header.php'; ?>
 
 <?php
-        
-        include __DIR__ . '/model_patients.php';
-        $patients = getPatients ();
-        
-    ?>
     
+    include __DIR__ . '/model_patients.php';
+    include __DIR__ . '/functions.php';
+    if (isPostRequest()) {
+        $id = filter_input(INPUT_POST, 'patientId');
+        deletePatient ($id);
+
+    }
+    $patients = getPatients ();
+    
+?>
 <html lang="en">
 <head>
   <title>View Patients</title>
@@ -33,6 +38,7 @@
                     <th>Married?</th>
                     <th>Birth Date</th>
                     <th>Age</th>
+                    <th>Edit</th>
                 </tr>
             </thead>
             <tbody>
@@ -40,18 +46,28 @@
             
             <?php foreach ($patients as $row): ?>
                 <tr>
-                    <td><?php echo $row['id']; ?></td>
-                    <td><?php echo $row['patientFirstName']; ?></td>
-                    <td><?php echo $row['patientLastName']; ?></td>   
-                    <td><?php echo $row['patientMarried']; ?></td>           
-                    <td><?php echo $row['patientBirthDate']; ?></td>  
+                    <td>
+                        <form action="patientView.php" method="post">
+                                <input type="hidden" name="patientId" value="<?= $row['id']; ?>" />
+                                <button class="btn glyphicon glyphicon-trash" type="submit"></button>
+                                <?php echo $row['id']; ?>
+                            </form>
+                            
+                   </td>
+                    <td><?php echo $row['patientFirstName']; ?></td> 
+                    <td><?php echo $row['patientLastName']; ?></td> 
+                    <td><?php echo $row['patientMarried']; ?></td> 
+                    <td><?php echo $row['patientBirthDate']; ?></td> 
+
+                    <td><a href="editPatient.php?action=update&patientId=<?= $row['id'] ?>">Edit</a></td> 
+                    
                 </tr>
             <?php endforeach; ?>
             </tbody>
         </table>
         
         <br />
-        <a href="addPatient.php">Add Patient</a>
+        <a href="editPatient.php?action=add">Add Patient</a>
     </div>
     </div>
 </body>

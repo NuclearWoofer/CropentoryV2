@@ -89,6 +89,7 @@ li {
       <a href="../week8/index.php">Assignment 8</a>
       <a href="../week9/index.php">Assignment 9</a>
       <a href="../week10/index.php">Assignment 10</a> 
+      <a href="../week5/carsView.php">Extra Credit 1 - Cars Inventory</a>
     </div>
   </div> 
   <a href="../site/heroku_resources.php">Heroku Resources</a>
