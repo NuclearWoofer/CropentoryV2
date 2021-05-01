@@ -72,7 +72,7 @@
     <div class="form-group">
       <label class="control-label col-sm-2" for="patient first name">Patient First Name:</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="patientFirstName" placeholder="Enter patient first name" name="team" value="<?= $patientFirstName; ?>">
+        <input type="text" class="form-control" id="patientFirstName" placeholder="Enter patient first name" name="patientFirstName" value="<?= $patientFirstName; ?>">
       </div>
     </div>
         <!--Patients Last Name input-->
