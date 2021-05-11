@@ -96,7 +96,7 @@ li {
   <a href="../site/php_resources.php">PHP Resources</a>
   <a href="../site/git_resources.php">Git Resources</a>
   <a href="https://github.com/NuclearWoofer/SE266">My GitHub Repo</a>
-  <a href="https://stackexchange.com/users/20664022/nucleardoggo">StackExcange</a>
+  <a href="file:///C:/Users/Michael/Desktop/NEIT%20SE266%20-%20PHP/PHPProposal.pdf">Final Project</a>
 </div>
 <script>
 /* When the user clicks on the button, 
