@@ -83,7 +83,7 @@ li {
       <a href="../week2/patientIntake.view.php">Assignment 2 - Patient Intake</a>
       <a href="../week3/index.php">Assignment 3 - ATM</a>
       <a href="../week4/patientView.php">Adding Patients / Patient Intake</a>
-      <a href="../week5/patientView.php">Deleting / Updating Patient Records</a>
+      <a href="../week4/patientView.php">Deleting / Updating Patient Records</a>
       <a href="../week6/index.php">Assignment 6</a>
       <a href="../week7/index.php">Assignment 7</a>
       <a href="../week8/index.php">Assignment 8</a>
@@ -96,7 +96,7 @@ li {
   <a href="../site/php_resources.php">PHP Resources</a>
   <a href="../site/git_resources.php">Git Resources</a>
   <a href="https://github.com/NuclearWoofer/SE266">My GitHub Repo</a>
-  <a href="file:///C:/Users/Michael/Desktop/NEIT%20SE266%20-%20PHP/PHPProposal.pdf">Final Project</a>
+  <a href="../week10/index.php">Final Project</a>
 </div>
 <script>
 /* When the user clicks on the button, 
