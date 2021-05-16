@@ -66,7 +66,7 @@
     
 <div class="container">
     
-  <h2>Add Team</h2>
+  <h2>Add Patient</h2>
   <form class="form-horizontal" action="editPatient.php" method="post">
       <input type="hidden" name="action" value="<?= $action; ?>">
       <input type="hidden" name="patientId" value="<?= $id; ?>">

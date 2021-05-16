@@ -32,12 +32,13 @@
     <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>ID</th>
+                   
+                    <th>Patient ID</th>
                     <th>Patient First Name</th>
                     <th>Patient Last Name</th>
                     <th>Married?</th>
                     <th>Birth Date</th>
-                    <!--<th>Age</th>-->
+                   <!--<th>Age</th>-->
                     <th>Edit</th>
                 </tr>
             </thead>
@@ -53,11 +54,14 @@
                                 <?php echo $row['id']; ?>
                             </form>
                             
+                            
                    </td>
                     <td><?php echo $row['patientFirstName']; ?></td> 
                     <td><?php echo $row['patientLastName']; ?></td> 
-                    <td><?php echo $row['patientMarried']; ?></td> 
+                    <td><?php echo $row['patientMarried'] ? 'Yes' : 'No'; ?></td> 
                     <td><?php echo $row['patientBirthDate']; ?></td> 
+                    <td><?php echo $rowgetAge('patientBirthDate'); ?></td>
+                    
 
                     <td><a href="editPatient.php?action=update&patientId=<?= $row['id'] ?>">Edit</a></td> 
                     

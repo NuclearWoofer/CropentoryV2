@@ -84,7 +84,7 @@ li {
       <a href="../week3/index.php">Assignment 3 - ATM</a>
       <a href="../week4/patientView.php">Adding Patients / Patient Intake</a>
       <a href="../week4/patientView.php">Deleting / Updating Patient Records</a>
-      <a href="../week6/index.php">Assignment 6</a>
+      <a href="../week4/patientView.php">Patient Metrics</a>
       <a href="../week7/index.php">Assignment 7</a>
       <a href="../week8/index.php">Assignment 8</a>
       <a href="../week9/index.php">Assignment 9</a>
