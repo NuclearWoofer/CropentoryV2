@@ -9,6 +9,7 @@
         $patientLastName = filter_input(INPUT_POST, 'patientLastName');
         $patientMarried = filter_input(INPUT_POST, 'patientMarried');
         $patientBirthDate = filter_input(INPUT_POST, 'patientBirthDate');
+
         
 
            
@@ -62,6 +63,7 @@
         <input type="date" class="form-control" id="patientBirthDate" placeholder="11/22/1963" name="patientBirthDate">
       </div>
     </div>
+    
 
     
     <div class="form-group">        

@@ -11,17 +11,35 @@
         if (isset($_GET['action'])) {
             $action = filter_input(INPUT_GET, 'action');
             $id = filter_input(INPUT_GET, 'patientId');
+            $patientMeasurementId = filter_input(INPUT_GET, 'patientMeasurementId');
             if ($action == "update") {
                 $row = getPatient($id);
                 $patientFirstName = $row['patientFirstName'];
                 $patientLastName = $row['patientLastName'];
                 $patientMarried = $row['patientMarried'];
                 $patientBirthDate = $row['patientBirthDate'];
+                //New Measurements
+                
+                $row = getPatientMeasurements($patientMeasurementId);
+                $patientHeight = $row['patientHeight'];
+                $patientWeight = $row['patientWeight'];
+                $patientBPSystolic = $row['patientBPSystolic'];
+                $patientBPDiastolic = $row['patientBPDiastolic'];
+                $patientTemperature = $row['patientTemperature'];
+
+
+
             } else {
                 $patientFirstName = "";
                 $patientLastName = "";
                 $patientMarried = "";
                 $patientBirthDate = "";
+                //new measurements
+                $patientHeight = "";
+                $patientWeight = "";
+                $patientBPSystolic = "";
+                $patientBPDiastolic = "";
+                $patientTemperature = "";
 
             }
             
@@ -29,10 +47,18 @@
         } elseif (isset($_POST['action'])) {
             $action = filter_input(INPUT_POST, 'action');
             $id = filter_input(INPUT_POST, 'patientId');
+            $patientMeasurementId = filter_input(INPUT_GET, 'patientMeasurementId');
             $patientFirstName = filter_input(INPUT_POST, 'patientFirstName');
             $patientLastName = filter_input(INPUT_POST, 'patientLastName');
             $patientMarried = filter_input(INPUT_POST, 'patientMarried');
             $patientBirthDate = filter_input(INPUT_POST, 'patientBirthDate');
+            //New Measurements
+            $patientMeasurementId = filter_input(INPUT_POST, 'patientMeasurementId');
+            $patientHeight = filter_input(INPUT_POST, 'patientHeight');
+            $patientWeight = filter_input(INPUT_POST, 'patientWeight');
+            $patientBPSystolic = filter_input(INPUT_POST, 'patientBPSystolic');
+            $patientBPDiastolic = filter_input(INPUT_POST, 'patientBPDiastolic');
+            $patientTemperature = filter_input(INPUT_POST, 'patientTemperature');
 
             
         } 
@@ -102,18 +128,64 @@
       </div>
     </div>
 
-        
+
+       <!--Submit Button-->
     <div class="form-group">        
       <div class="col-sm-offset-2 col-sm-10">
         <button type="submit" class="btn btn-default"><?php echo $action; ?> Patient</button>
        
       </div>
     </div>
-
   </form>
-  
-  <div class="col-sm-offset-2 col-sm-10"><a href="./patientView.php">View Patients</a></div>
-</div>
 
+
+<!--NEW Patient Measurements-->
+<div class="container">
+  <h2>Patient Measurements</h2>
+  <form name="measurement" method="POST" action="editPatient.php">
+  <input type="hidden" name="patientId" value="59">
+
+    <!--patientHeight-->
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="pwd">Height</label>
+    <div class="col-sm-10">          
+      <input type="text" class="form-control" id="patientHeight" placeholder="5" name="patientHeight" value="<?= $patientHeight; ?>">
+    </div>
+  </div>
+    <!--patientWeight-->
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="pwd">Weight</label>
+    <div class="col-sm-10">          
+      <input type="text" class="form-control" id="patientWeight" placeholder="5" name="patientWeight" value="<?= $patientWeight; ?>">
+    </div>
+  </div>
+      <!--patientBPSystolic & patientBPDiastolic-->
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="pwd">Blood Pressure</label>
+    <div class="col-sm-10">          
+      <input type="text" class="form-control" id="patientBPSystolic" placeholder="5" name="systolic" value="<?= $patientBPSystolic; ?>">
+      <label>/</label>
+      <input type="text" class="form-control" id="patientBPDiastolic" placeholder="5" name="diastolic" value="<?= $patientBPDiastolic; ?>">
+    </div>
+  </div>
+       <!--patient temperature-->
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="pwd">Patient Temperature</label>
+    <div class="col-sm-10">          
+      <input type="text" class="form-control" id="patientTemperature" placeholder="5" name="patientTemperature" value="<?= $patientTemperature; ?>">
+    </div>
+  </div>
+
+  <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default"><?php echo $action; ?> Submit Patient Measurements</button>
+       
+      </div>
+    </div>
+  </form>
+
+</div>
+</form>
+<div class="col-sm-offset-2 col-sm-10"><a href="./patientView.php">View Patients</a></div>
 </body>
 </html>

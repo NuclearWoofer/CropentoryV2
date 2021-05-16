@@ -93,6 +93,43 @@
          return ($results);
     }
 
+    function getPatientMeasurements () {
+        global $db;
+        
+        $results = [];
+
+        $stmt = $db->prepare("SELECT patientMeasurementId, patientHeight, patientWeight, patientTemperature, patientBPSystolic, patientBPDiastolic FROM patientMeasurements ORDER BY patientMeasurementId"); 
+        
+        if ( $stmt->execute() && $stmt->rowCount() > 0 ) {
+             $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                 
+         }
+         
+         return ($results);
+    }
+
+    function updatePatientMeasurements ($patientMeasurementId, $patientHeight, $patientWeight, $patientTemperature, $patientBPSystolic, $patientBPDiastolic) {
+        global $db;
+
+        $result = "";
+        
+        $stmt = $db->prepare("UPDATE patientMeasurements SET patientHeight = :patientHeight, patientWeight = :patientWeight, patientTemperature = :patientTemperature, patientBPSystolic = :patientBPSystolic, patientBPDiastolic = :patientBPDiastolic WHERE patientMeasurementId =:patientMeasurementId");
+        
+        $stmt->bindValue(':patientMeasurementId', $patientMeasurementId);
+        $stmt->bindValue(':patientHeight', $patientHeight);
+        $stmt->bindValue(':patientWeight', $patientWeight);
+        $stmt->bindValue(':patientTemperature', $patientTemperature);
+        $stmt->bindValue(':patientBPSystolic', $patientBPSystolic);
+        $stmt->bindValue(':patientBPDiastolic', $patientBPDiastolic);
+
+      
+        if ($stmt->execute() && $stmt->rowCount() > 0) {
+            $result = 'Data Updated';
+        }
+        
+        return ($result);
+    }
+
    
 
 ?>

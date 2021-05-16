@@ -60,7 +60,7 @@
                     <td><?php echo $row['patientLastName']; ?></td> 
                     <td><?php echo $row['patientMarried'] ? 'Yes' : 'No'; ?></td> 
                     <td><?php echo $row['patientBirthDate']; ?></td> 
-                    <td><?php echo $rowgetAge('patientBirthDate'); ?></td>
+                    
                     
 
                     <td><a href="editPatient.php?action=update&patientId=<?= $row['id'] ?>">Edit</a></td> 
