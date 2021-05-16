@@ -92,11 +92,13 @@ li {
       <a href="../week5/carsView.php">Extra Credit 1 - Cars Inventory</a>
     </div>
   </div> 
+  <a href="../site/index.php">Home Screen</a>
   <a href="../site/heroku_resources.php">Heroku Resources</a>
   <a href="../site/php_resources.php">PHP Resources</a>
   <a href="../site/git_resources.php">Git Resources</a>
   <a href="https://github.com/NuclearWoofer/SE266">My GitHub Repo</a>
   <a href="../week10/index.php">Final Project</a>
+  
 </div>
 <script>
 /* When the user clicks on the button, 
