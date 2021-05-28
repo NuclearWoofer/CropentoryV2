@@ -73,8 +73,7 @@
     }
    
  
-  
-  
+
 
     function getTeam ($id) {
          global $db;

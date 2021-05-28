@@ -130,6 +130,55 @@
         return ($result);
     }
 
+    function searchPatients ($column, $searchValue) {
+        global $db;
+          
+         $results = [];
+          $stmt = $db->prepare("SELECT id, patientFirstName, patientLastName, patientMarried, patientBirthDate FROM patients WHERE $column LIKE :search");
+          $search = '%'.$searchValue.'%';
+          
+          $stmt->bindValue(':search', $search);
+         
+          
+          if ( $stmt->execute() && $stmt->rowCount() > 0 ) {
+               $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+  
+           }
+  
+           return ($results);
+    }
+
+    function sortPatients ($column, $order) {
+      
+        global $db;
+         
+         $results = [];
+         
+        
+         $stmt = $db->prepare("SELECT id, patientFirstName, patientLastName, patientMarried, patientBirthDate FROM patients ORDER BY $column $order");
+         
+         
+         if ( $stmt->execute() && $stmt->rowCount() > 0 ) {
+              $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                         
+          }
+          
+          return ($results);
+   }
+
+   function getFieldNames () {
+    $fieldNames = ['patientFirstName', 'patientLastName' ,'patientMarried', 'patientBirthDate'];
+    
+    return ($fieldNames);
+    
+   }
+
+
+
+
+
+ 
+
    
 
 ?>

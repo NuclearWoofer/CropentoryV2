@@ -25,7 +25,7 @@
     <div class="container">
         
     <div class="col-sm-offset-2 col-sm-10">
-        <h1>Patients Inv.</h1>
+        <h1>Patients On Board</h1>
     
    
   
