@@ -3,7 +3,7 @@
 <?php
 
     
-    include __DIR__ . 'model_patients.php';
+    include __DIR__ . '/model_patients.php';
     $action = filter_input(INPUT_POST, 'action');
     $fieldName = filter_input(INPUT_POST, 'fieldName');
     $fieldValue = filter_input(INPUT_POST, 'fieldValue');

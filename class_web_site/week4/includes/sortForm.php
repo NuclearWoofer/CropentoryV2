@@ -1,4 +1,3 @@
-<?php include __DIR__ . '/../include/header.php'; ?>
 
 <form  method="post">
     <input type="hidden" name="action" value="sort">
@@ -6,7 +5,7 @@
        <select name="fieldName">
               <option value="">Select One</option>
               <option value="patientFirstName">Patient's First Name</option>
-              <option value="patientLastName">Patient's Last Name</option>
+              <option value="patientBirthDate">Patient's Birth Date</option>
               
           </select>
        <input type="radio" name="fieldValue" value="ASC" checked />Ascending
@@ -16,5 +15,3 @@
    
       
   </form>
-
-<?php include __DIR__ . '/../include/footer.php'; ?>

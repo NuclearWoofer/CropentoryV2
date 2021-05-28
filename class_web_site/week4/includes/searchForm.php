@@ -1,4 +1,3 @@
-<?php include __DIR__ . '/../include/header.php'; ?>
 
   <h2>Search Team</h2>
   <form method="post">
@@ -7,7 +6,7 @@
        <select name="fieldName">
               <option value="">Select One</option>
               <option value="patientFirstName">Patient's First Name</option>
-              <option value="patientLastName">Patient's Last Name</option>
+              <option value="patientBirthDate">Patient's Birth Date</option>
               
           </select>
        <input type="text" name="fieldValue" value= "<?= $fieldValue ?>">
@@ -15,5 +14,3 @@
       
   </form>
     
-
-<?php include __DIR__ . '/../include/footer.php'; ?>

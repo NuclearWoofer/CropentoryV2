@@ -1,4 +1,3 @@
-<?php include __DIR__ . '/../include/header.php'; ?>
 
 <table class="table table-striped" style="width:50%">
 
@@ -23,4 +22,3 @@
     </table>
 
 
-<?php include __DIR__ . '/../include/footer.php'; ?>
