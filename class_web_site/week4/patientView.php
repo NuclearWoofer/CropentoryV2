@@ -72,9 +72,12 @@
         
         <br />
         <a href="editPatient.php?action=add">Add Patient</a>
+        <br />
+        <a href="./searchsort.php">Search and Sort Patients</a>
     </div>
     </div>
 </body>
+
 </html>
 
 <?php include __DIR__ . '/../include/footer.php'; ?>

@@ -15,6 +15,12 @@
     } else {
         $patients = getPatients ();  
     }
+
+    if(isset($_POST['logout'])){
+        session_destroy();
+        header('Location: login.php');
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -35,9 +41,11 @@
             include __DIR__ . '/includes/searchForm.php';
             include __DIR__ . '/includes/sortForm.php';
             include __DIR__ . '/includes/view.php';
-        
         ?>
     </body>
+
+    <input type="submit" value="Logout" name="logout">
+    <div class="col-sm-offset-2 col-sm-10"><a href="./patientView.php">View Patients</a></div>
 </html>
 
 <?php include __DIR__ . '/../include/footer.php'; ?>

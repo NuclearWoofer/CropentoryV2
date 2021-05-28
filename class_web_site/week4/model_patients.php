@@ -173,7 +173,18 @@
     
    }
 
+   function checkLogin ($userName, $password) {
+    global $db;
+    $stmt = $db->prepare("SELECT id FROM users WHERE userName =:userName AND userPassword = :password");
 
+    $stmt->bindValue(':userName', $userName);
+    $stmt->bindValue(':password', sha1($password));
+    
+    $stmt->execute ();
+   
+    return( $stmt->rowCount() > 0);
+    
+}
 
 
 
