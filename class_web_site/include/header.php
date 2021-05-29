@@ -86,7 +86,7 @@ li {
       <a href="../week4/patientView.php">Deleting / Updating Patient Records</a>
       <a href="../week4/patientView.php">Patient Metrics</a>
       <a href="../week4/login.php">Patient Search + Login Page</a>
-      <a href="../week8/index.php">Disney Votes</a>
+      <a href="../week8/data.html">Disney Votes</a>
       <a href="../week9/index.php">Assignment 9</a>
       <a href="../week10/index.php">Assignment 10</a> 
       <a href="../week5/carsView.php">Extra Credit 1 - Cars Inventory</a>
