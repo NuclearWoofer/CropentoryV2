@@ -16,6 +16,23 @@
          
          return ($results);
     }
+
+       
+    function getPatient ($id) {
+        global $db;
+       
+       $results = [];
+       
+       $stmt = $db->prepare("SELECT id, patientFirstName, patientLastName, patientMarried, patientBirthDate FROM patients WHERE id=:id");
+       $stmt->bindValue(':id', $id);
+      
+       if ( $stmt->execute() && $stmt->rowCount() > 0 ) {
+            $results = $stmt->fetch(PDO::FETCH_ASSOC);
+                       
+        }
+        
+        return ($results);
+   }
     
     function addpatient ($f, $l, $m, $d) {
         global $db;
@@ -76,22 +93,7 @@
         
         return ($results);
     }
-   
-    function getPatient ($id) {
-         global $db;
-        
-        $results = [];
-        
-        $stmt = $db->prepare("SELECT id, patientFirstName, patientLastName, patientMarried, patientBirthDate FROM patients WHERE id=:id");
-        $stmt->bindValue(':id', $id);
-       
-        if ( $stmt->execute() && $stmt->rowCount() > 0 ) {
-             $results = $stmt->fetch(PDO::FETCH_ASSOC);
-                        
-         }
-         
-         return ($results);
-    }
+
 
     function getPatientMeasurements () {
         global $db;

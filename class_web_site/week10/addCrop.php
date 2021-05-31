@@ -12,6 +12,7 @@
            $result = addCrops ($cropName, $cropPlanted, $cropQty);
            
        }
+    
     ?>
     
 
@@ -25,36 +26,41 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <style>
-    h2{
+    h2, h3{
         padding-top: 10px;
-        padding-bottom: 10px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         color:#1E8449;
         text-align: center;
     }
+   
+ 
+
 </style>
 <body>
 
-<div class="container">
+<div class="container" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
     
   <h2>Add Crops</h2>
-      <!--Date the crop was planted-->
+  <h3>Here we can add more crops / plants to your inventory.</h3>
+      
   <form class="form-horizontal" action="addCrop.php" method="post">
+<!--Date the crop was planted-->
     <div class="form-group">
-      <label class="control-label col-sm-2" for="cropPlanted">Date Crop Planted:</label>
+      <label class="control-label col-sm-2" for="crop Planted">Date Crop Planted</label>
       <div class="col-sm-10">
         <input type="date" class="form-control" id="cropPlanted" placeholder="11/22/1963" name="cropPlanted">
       </div>
     </div>
-    <!--Patients Last Name input-->
+    <!--Quantity of crops-->
     <div class="form-group">
-      <label class="control-label col-sm-2" for="cropQty">Quantity:</label>
+      <label class="control-label col-sm-2" for="cro pQty">Quantity:</label>
       <div class="col-sm-10">
         <input type="text" class="form-control" id="cropQty" placeholder="Enter crop quantity" name="cropQty">
       </div>
     </div>
-    <!--patient Married-->
+    <!--dropdown of cropName-->
     <div class="form-group">
-       <label class="control-label col-sm-2" for="cropName">Crop List</label>
+       <label class="control-label col-sm-2" for="crop Name">Crop List</label>
        <div class="col-sm-10">
         <select name="cropName" id="cropName">
             <option value="tomato">Tomato</option>

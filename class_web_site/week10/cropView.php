@@ -32,7 +32,8 @@
     <table class="table table-striped">
             <thead>
                 <tr>
-                   
+
+                    
                     <th>Crop ID</th>
                     <th>Crop/Plant Name</th>
                     <th>Date Planted</th>
@@ -49,9 +50,9 @@
                 <tr>
                     <td>
                         <form action="cropView.php" method="post">
-                                <input type="hidden" name="cropId" value="<?= $row['id']; ?>" />
+                                <input type="hidden" name="cropId" value="<?= $row['cropId']; ?>" />
                                 <button class="btn glyphicon glyphicon-trash" type="submit"></button>
-                                <?php echo $row['id']; ?>
+                                <?php echo $row['cropId']; ?>
                             </form>
                             
                             
@@ -64,7 +65,7 @@
                     
                     
 
-                    <td><a href="editCrop.php?action=update&patientId=<?= $row['id'] ?>">Edit Crop Info</a></td> 
+                    <td><a href="editCrop.php?action=update&patientId=<?= $row['cropId'] ?>">Edit Crop Info</a></td> 
                     
                 </tr>
             <?php endforeach; ?>
