@@ -46,21 +46,21 @@
   <form class="form-horizontal" action="addCrop.php" method="post">
 <!--Date the crop was planted-->
     <div class="form-group">
-      <label class="control-label col-sm-2" for="crop Planted">Date Crop Planted</label>
+      <label class="control-label col-sm-2" for="cropPlanted">Date Crop Planted</label>
       <div class="col-sm-10">
         <input type="date" class="form-control" id="cropPlanted" placeholder="11/22/1963" name="cropPlanted">
       </div>
     </div>
     <!--Quantity of crops-->
     <div class="form-group">
-      <label class="control-label col-sm-2" for="cro pQty">Quantity:</label>
+      <label class="control-label col-sm-2" for="cropQty">Quantity:</label>
       <div class="col-sm-10">
         <input type="text" class="form-control" id="cropQty" placeholder="Enter crop quantity" name="cropQty">
       </div>
     </div>
     <!--dropdown of cropName-->
     <div class="form-group">
-       <label class="control-label col-sm-2" for="crop Name">Crop List</label>
+       <label class="control-label col-sm-2" for="cropName">Crop List</label>
        <div class="col-sm-10">
         <select name="cropName" id="cropName">
             <option value="tomato">Tomato</option>

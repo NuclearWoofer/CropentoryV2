@@ -5,11 +5,11 @@
     include __DIR__ . '/model_crop.php';
     include __DIR__ . '/functions.php';
     if (isPostRequest()) {
-        $id = filter_input(INPUT_POST, 'cropId');
-        deletePatient ($id);
+        $cropId = filter_input(INPUT_POST, 'cropId');
+        deleteCrop ($cropId);
 
     }
-    $crops = getCrops();
+    $crops = getCrops ();
     
 ?>
 <html lang="en">
@@ -38,8 +38,7 @@
                     <th>Crop/Plant Name</th>
                     <th>Date Planted</th>
                     <th>Quantity</th>
-                    <th>Estimated Harvest</th>
-                    <th>Estimated Sell</th>
+                    
                     <th>Edit</th>
                 </tr>
             </thead>
@@ -57,15 +56,12 @@
                             
                             
                    </td>
+                    
                     <td><?php echo $row['cropName']; ?></td> 
                     <td><?php echo $row['cropPlanted']; ?></td> 
                     <td><?php echo $row['cropQty'] ?></td> 
-                    <td><?php echo $row['cropEstHarvest']; ?></td> 
-                    <td><?php echo $row['cropEstSell']; ?></td> 
                     
-                    
-
-                    <td><a href="editCrop.php?action=update&patientId=<?= $row['cropId'] ?>">Edit Crop Info</a></td> 
+                    <td><a href="editCrop.php?action=update&cropId=<?= $row['cropId'] ?>">Edit Crop Info</a></td> 
                     
                 </tr>
             <?php endforeach; ?>
@@ -73,9 +69,9 @@
         </table>
         
         <br />
-        <a href="editCrop.php?action=add">Add More Crops</a> <!-- ADD LATER -->
+        <a href="editCrop.php?action=add">Add More Crops</a> 
         <br />
-        <a href="./searchsort.php">Search and Sort Crops</a> <!-- ADD LATER -->
+        <a href="./searchsort.php">Search and Sort Crops</a> 
     </div>
     </div>
 </body>
