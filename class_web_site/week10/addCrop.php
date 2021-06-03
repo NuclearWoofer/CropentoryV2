@@ -63,14 +63,14 @@
        <label class="control-label col-sm-2" for="cropName">Crop List</label>
        <div class="col-sm-10">
         <select name="cropName" id="cropName">
-            <option value="tomato">Tomato</option>
-            <option value="potato">Potato</option>
-            <option value="peas">Peas</option>
-            <option value="watermelon">Watermelon</option>
-            <option value="pumpkin">Pumpkin</option>
-            <option value="sunflower">Sunflower</option>
-            <option value="cucumber">Cucumber</option>
-            <option value="squash">Squash</option>
+            <option value="Tomato">Tomato</option>
+            <option value="Potato">Potato</option>
+            <option value="Peas">Peas</option>
+            <option value="Watermelon">Watermelon</option>
+            <option value="Pumpkin">Pumpkin</option>
+            <option value="Sunflower">Sunflower</option>
+            <option value="Cucumber">Cucumber</option>
+            <option value="Squash">Squash</option>
         </select>
        </div>
     </div>

@@ -134,13 +134,15 @@ function sortCrops ($column, $order) {
 
 
 function getFieldNames () {
-    $fieldNames = ['patientFirstName', 'patientLastName' ,'patientMarried', 'patientBirthDate'];
+    $fieldNames = ['cropName', 'cropPlanted' ,'cropQty', 'cropEstHarvest'];
     
     return ($fieldNames);
     
-   }
+}
 
-   function checkLogin ($userName, $password) {
+
+
+function checkLogin ($userName, $password) {
     global $db;
     $stmt = $db->prepare("SELECT id FROM users WHERE userName =:userName AND userPassword = :password");
 

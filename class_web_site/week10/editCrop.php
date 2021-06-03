@@ -80,7 +80,7 @@
 <div class="container" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
     
     <h2>Add Crops</h2>
-    <h3>Here we can add more crops / plants to your inventory.</h3>
+    <h3>Here we can add more crops to your inventory.</h3>
         
     <form class="form-horizontal" action="editCrop.php" method="post">
     <input type="hidden" name="action" value="<?= $action; ?>">
@@ -90,27 +90,27 @@
          <label class="control-label col-sm-2" for="pwd">Crop List</label>
          <div class="col-sm-10">
           <select name="cropName" id="cropName">
-              <option value="tomato">Tomato</option>
-              <option value="potato">Potato</option>
-              <option value="peas">Peas</option>
-              <option value="watermelon">Watermelon</option>
-              <option value="pumpkin">Pumpkin</option>
-              <option value="sunflower">Sunflower</option>
-              <option value="cucumber">Cucumber</option>
-              <option value="squash">Squash</option>
+              <option value="Tomato">Tomato</option>
+              <option value="Potato">Potato</option>
+              <option value="Peas">Peas</option>
+              <option value="Watermelon">Watermelon</option>
+              <option value="Pumpkin">Pumpkin</option>
+              <option value="Sunflower">Sunflower</option>
+              <option value="Cucumber">Cucumber</option>
+              <option value="Squash">Squash</option>
           </select>
          </div>
       </div>
   <!--Date the crop was planted-->
       <div class="form-group">
-        <label class="control-label col-sm-2" for="cropPlanted">Date Crop Planted</label>
+        <label class="control-label col-sm-2" for="cropPlanted">Date Crop Planted: </label>
         <div class="col-sm-10">
           <input type="date" class="form-control" id="cropPlanted" placeholder="11/22/1963" name="cropPlanted" value="01/01/2001">
         </div>
       </div>
       <!--Quantity of crops-->
       <div class="form-group">
-        <label class="control-label col-sm-2" for="cropQty">Quantity:</label>
+        <label class="control-label col-sm-2" for="cropQty">Quantity: </label>
         <div class="col-sm-10">
           <input type="text" class="form-control" id="cropQty" placeholder="Enter crop quantity" name="cropQty" <?= $cropQty; ?>>
         </div>
