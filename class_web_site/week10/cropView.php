@@ -21,6 +21,22 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
+<style>
+    h2, h3{
+        padding-top: 10px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color:#1E8449;
+        text-align: center;
+    }
+    
+    body{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       
+    }
+
+
+</style>
+
 <body>
     <div class="container">
         

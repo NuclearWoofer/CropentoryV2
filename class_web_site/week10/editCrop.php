@@ -17,7 +17,7 @@
                 $cropName = $row['cropName'];
                 $cropPlanted = $row['cropPlanted'];
                 $cropQty = $row['cropQty'];
-                $cropEstHarvest = $row['cropEstHarvest'];
+                
 
 
 
@@ -25,7 +25,7 @@
                 $cropName = "";
                 $cropPlanted = "";
                 $cropQty = "";
-                $cropEstHarvest = "";
+                
 
 
             }
@@ -37,7 +37,7 @@
             $cropName = filter_input(INPUT_POST, 'cropName');
             $cropPlanted = filter_input(INPUT_POST, 'cropPlanted');
             $cropQty = filter_input(INPUT_POST, 'cropQty');
-            $cropEstHarvest = filter_input(INPUT_POST, 'cropEstHarvest');
+            
 
             
         } 
@@ -79,8 +79,8 @@
 
 <div class="container" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
     
-    <h2>Add Crops</h2>
-    <h3>Here we can add more crops to your inventory.</h3>
+    <h2>Edit Crops</h2>
+    <h3>Here we can edit our crops.</h3>
         
     <form class="form-horizontal" action="editCrop.php" method="post">
     <input type="hidden" name="action" value="<?= $action; ?>">
@@ -123,7 +123,7 @@
        <!--Submit Button-->
     <div class="form-group">        
       <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default"><?php echo $action; ?> Patient</button>
+        <button type="submit" class="btn btn-default"><?php echo $action; ?>Plant This Plant!</button>
        
       </div>
     </div>

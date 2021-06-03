@@ -7,7 +7,7 @@
 <style>
 
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
   font-size: "16px;";
   margin-left: 20px;
   margin-right: 10px;

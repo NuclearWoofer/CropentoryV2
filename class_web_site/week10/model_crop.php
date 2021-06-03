@@ -69,8 +69,6 @@
         $stmt->bindValue(':cropQty', $cropQty);
         $stmt->bindValue(':cropPlanted', $cropPlanted);
         
-
-      
         if ($stmt->execute() && $stmt->rowCount() > 0) {
             $results = 'Crop Updated!';
         }

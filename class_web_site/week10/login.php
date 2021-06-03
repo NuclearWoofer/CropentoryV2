@@ -38,21 +38,39 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <style type="text/css">
-        #mainDiv {margin-left: 100px; margin-top: 100px;}
+
+    
+        #mainDiv {margin-left: 1100px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
         .col1 {width: 100px; float: left;}
         .col2 {float: left;}
-        .rowContainer {clear: left; height: 40px;}
-        .error {margin-left: 100px; clear: left; height: 40px; color: red;}
+        .rowContainer {clear: none; height: 40px; width: 500px;}
+        .error {margin-left: 100px; clear: left; color: red;}
+        
+        h1, h2, h3{
+        margin-top: 50px;
+        padding-top: 10px;
+        font-size: 40px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color:#1E8449;
+        text-align: center;
+    }
+
+    body{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       text-align: center;
+    }
+
     </style>
 <title>Login into FarmerNow! (working title)</title>
 </head>
 <body>
+<h3>Please Login</h3>
 
     <div id="mainDiv">
         <form method="post" action="login.php">
            
             <div class="rowContainer">
-                <h3>Please Login</h3>
+                
             </div>
             <div class="rowContainer">
                 <div class="col1">User Name:</div>
