@@ -61,10 +61,11 @@
     }
 
     </style>
-<title>Login into FarmerNow! (working title)</title>
+<title>Login</title>
 </head>
 <body>
-<h3>Please Login</h3>
+    
+<h3>Welcome Farmer! Please Log in.</h3>
 
     <div id="mainDiv">
         <form method="post" action="login.php">

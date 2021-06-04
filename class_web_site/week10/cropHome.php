@@ -2,14 +2,14 @@
 
 <html>
     <head>
-        <title>Disney Votes</title>
+        <title>Home Page</title>
         <style>
-            #tomato{
-                float: left;
-            }
+           
+
             .main{
                 text-align: center;
             }
+
             h1, h2, h3{
                 padding-top: 10px;
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -43,6 +43,7 @@
             .weatherWidget{
                 float: none;
                 margin-right: 920px;
+                
             }
 
         </style>
@@ -57,10 +58,8 @@
     <body>
         
         <div class="main" style="margin-left:50px; margin-top:50px;">
-        <div id="tomato">
-            <img src="/class_web_site/week10/images/farmfresh.jpg" alt="tomato">
-        </div>
-            <h1>What would you like to do?</h1>
+        
+            <h1 style="color:#1E8449; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">What would you like to do?</h1>
             <div class="crop">
                 <h3 style="color:#1E8449;">View Your Inventory</h3>
                 <img src="./images/beets.jpg">
