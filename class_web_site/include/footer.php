@@ -1,10 +1,6 @@
 <hr />
 <style>
-
-    body{
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-align: center;
-    }
+    
 </style>          
     <?php       
         $file = basename($_SERVER['PHP_SELF']);

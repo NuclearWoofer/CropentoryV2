@@ -1,5 +1,15 @@
+<style>
+   th{
+        color: maroon;
+    }
+    table{
+       align-content: center;
+        margin-left: 300px;
+    }
+  
 
-<table class="table table-striped" style="width:50%">
+</style>
+<table class="table table-striped" >
 
 <thead>
     <tr>

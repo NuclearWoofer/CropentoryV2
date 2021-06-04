@@ -22,7 +22,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <style>
-    h2, h3{
+    h1, h2, h3{
         padding-top: 10px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         color:#1E8449;
@@ -31,7 +31,10 @@
     
     body{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-       
+        
+    }
+    th{
+        color: maroon;
     }
 
 
@@ -88,6 +91,8 @@
         <a href="editCrop.php?action=add">Add More Crops</a> 
         <br />
         <a href="./searchsort.php">Search and Sort Crops</a> 
+        <br />
+        <a href="./cropHome.php">Home Page</a>
     </div>
     </div>
 </body>

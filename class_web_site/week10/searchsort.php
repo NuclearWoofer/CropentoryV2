@@ -45,7 +45,9 @@
     </body>
 
     <input type="submit" value="Logout" name="logout">
-    <div class="col-sm-offset-2 col-sm-10"><a href="./cropView.php">View Crops</a></div>
+    <div style="padding: 10px;"><a href="./addCrop.php">Add Crops</a></div>
+    
+    <div class="padding: 10px;"><a href="./cropView.php">View Crops</a></div>
 </html>
 
 <?php include __DIR__ . '/../include/footer.php'; ?>

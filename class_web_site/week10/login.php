@@ -89,8 +89,8 @@
         
     </div>
 
-    <div class="col-sm-offset-2 col-sm-10"><a href="./cropView.php">View Crops</a></div>
-    <div class="col-sm-offset-2 col-sm-10"><a href="./searchsort.php">Search and Sort Crops</a></div>
+    <div class="col-sm-offset-2 col-sm-10"><a href="./cropHome.php">Home Page</a></div>
+    
 
 </body>
 </html>
