@@ -96,7 +96,7 @@ li {
   <a href="../site/php_resources.php">PHP Resources</a>
   <a href="../site/git_resources.php">Git Resources</a>
   <a href="https://github.com/NuclearWoofer/SE266">My GitHub Repo</a>
-  <a href="../week10/index.php">Final Project</a>
+  <a href="../week10/login.php">Final Project</a>
   
 </div>
 <script>

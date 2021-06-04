@@ -5,7 +5,7 @@
        <select name="fieldName">
               <option value="">Select One</option>
               <option value="cropName">Crop Name</option>
-              <option value="cropPlaned">Seed Sown Date</option>
+              <option value="cropPlanted">Seed Sown Date</option>
               
           </select>
        <input type="radio" name="fieldValue" value="ASC" checked />Ascending

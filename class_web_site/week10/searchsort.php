@@ -44,7 +44,7 @@
         ?>
     </body>
 
-    <input type="submit" value="Logout" name="logout">
+   
     <div style="padding: 10px;"><a href="./addCrop.php">Add Crops</a></div>
     
     <div class="padding: 10px;"><a href="./cropView.php">View Crops</a></div>

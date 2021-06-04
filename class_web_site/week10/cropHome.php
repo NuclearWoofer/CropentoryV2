@@ -40,6 +40,11 @@
                 height: 50px;
             }
 
+            .weatherWidget{
+                float: none;
+                margin-right: 920px;
+            }
+
         </style>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,7 +58,7 @@
         
         <div class="main" style="margin-left:50px; margin-top:50px;">
         <div id="tomato">
-            <img src="/images/farmfresh.jpg" alt="tomato">
+            <img src="/class_web_site/week10/images/farmfresh.jpg" alt="tomato">
         </div>
             <h1>What would you like to do?</h1>
             <div class="crop">
@@ -79,5 +84,31 @@
             </div>
             </div>
         </div>
+
+        <!-- added this for flare, got this info from the internet -->
+<div class="weatherWidget" >
+
+    <script>
+        window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+        window.weatherWidgetConfig.push({
+            selector:".weatherWidget",
+            apiKey:"PWQEJXMBG4N8EJBLDBH35BXWS", 
+            location:"Providence, Rhode Island", 
+            unitGroup:"us", 
+            forecastDays:5, 
+            title:"Providence, Rhode Island", 
+            showTitle:true, 
+            showConditions:true
+        });
+        
+        (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+
+</div>
 
         </body>
