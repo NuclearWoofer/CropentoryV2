@@ -46,15 +46,10 @@
 
         .flex-container {
             display: flex;
-            
+            flex-direction: row;
         }
 
-        .flex-container > div {
-            background-color: #f1f1f1;
-            margin: 10px;
-            padding: 20px;
-            font-size: 30px;
-        }
+        
 
         
         h1, h2, h3{
