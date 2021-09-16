@@ -43,6 +43,13 @@
         .col2 {float: left;}
         .rowContainer {clear: none; height: 40px; width: 500px;}
         .error {margin-left: 100px; clear: left; color: red;}
+
+
+
+        .flex-container{
+            display: flex;
+        }
+
         
         h1, h2, h3{
         margin-top: 50px;
@@ -65,7 +72,7 @@
     
 <h3>Welcome Farmer! Please Log in.</h3>
 
-    <div id="mainDiv">
+    <div class="flex-container">
         <form method="post" action="login.php">
            
             <div class="rowContainer">
@@ -89,7 +96,7 @@
     </div>
 
     <h3>Register Here</h3>
-    <div id="register">
+    <div div class="flex-container">
         <form method="post" action="cropRegistered.php">
             <div class="rowContainer">
 
