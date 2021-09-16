@@ -71,7 +71,7 @@
 </head>
 <body>
     
-<h3>Welcome Farmer! Please Log in.</h3>
+
 <div class="flex-container">
     <div class="mainDiv">
         <form method="post" action="login.php">
@@ -79,6 +79,7 @@
             <div class="rowContainer">
                 
             </div>
+            <h3>Welcome Farmer! Please Log in.</h3>
             <div class="rowContainer">
                 <div class="col1">User Name:</div>
                 <div class="col2"><input type="text" name="userName" value="donald"></div> 
@@ -96,12 +97,13 @@
         
     </div>
 
-    <h3>Register Here</h3>
+    
     <div div class="rowContainer">
         <form method="post" action="cropRegistered.php">
             <div class="rowContainer">
 
             </div>
+            <h3>Register Here</h3>
             <div class="rowContainer">
                 <div class="col1">Email:</div>
                 <div class="col2"><input type="text" name="userName"></div> 
