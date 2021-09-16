@@ -48,6 +48,7 @@
 
         .flex-container{
             display: flex;
+            flex-direction: row;
         }
 
         
@@ -71,8 +72,8 @@
 <body>
     
 <h3>Welcome Farmer! Please Log in.</h3>
-
-    <div class="flex-container">
+<div class="flex-container">
+    <div class="rowContainer">
         <form method="post" action="login.php">
            
             <div class="rowContainer">
@@ -96,7 +97,7 @@
     </div>
 
     <h3>Register Here</h3>
-    <div div class="flex-container">
+    <div div class="rowContainer">
         <form method="post" action="cropRegistered.php">
             <div class="rowContainer">
 
@@ -122,7 +123,7 @@
 
         </form>
     </div>
-
+    </div>
     <div class="col-sm-offset-2 col-sm-10"><a href="./cropView.php">Enter Cropventory</a></div>
     
 
