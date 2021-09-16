@@ -38,15 +38,15 @@
     <style type="text/css">
 
     
-        /* #mainDiv {margin-left: 1100px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+        #mainDiv {margin-left: 1100px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
         .col1 {width: 100px; float: left;}
-        .col2 {float: left;} */
+        .col2 {float: left;}
         .rowContainer {clear: none; height: 40px; width: 500px;} 
         .error {margin-left: 100px; clear: left; color: red;}
 
         .flex-container {
             display: flex;
-            background-color: DodgerBlue;
+            
         }
 
         .flex-container > div {
@@ -57,13 +57,13 @@
         }
 
         
-        /* h1, h2, h3{
+        h1, h2, h3{
             margin-top: 50px;
             padding-top: 10px;
             font-size: 40px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             color:#1E8449;
-        } */
+        }
 
         body{
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
