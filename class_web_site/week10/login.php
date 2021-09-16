@@ -73,7 +73,7 @@
     
 <h3>Welcome Farmer! Please Log in.</h3>
 <div class="flex-container">
-    <div class="rowContainer">
+    <div class="mainDiv">
         <form method="post" action="login.php">
            
             <div class="rowContainer">
