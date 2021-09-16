@@ -38,48 +38,51 @@
     <style type="text/css">
 
     
-        #mainDiv {margin-left: 1100px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+        /* #mainDiv {margin-left: 1100px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
         .col1 {width: 100px; float: left;}
-        .col2 {float: left;}
-        .rowContainer {clear: none; height: 40px; width: 500px;}
+        .col2 {float: left;} */
+        .rowContainer {clear: none; height: 40px; width: 500px;} 
         .error {margin-left: 100px; clear: left; color: red;}
 
-
-
-        .flex-container{
+        .flex-container {
             display: flex;
-            flex-direction: row;
+            background-color: DodgerBlue;
+        }
+
+        .flex-container > div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
         }
 
         
-        h1, h2, h3{
-        margin-top: 50px;
-        padding-top: 10px;
-        font-size: 40px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color:#1E8449;
-        text-align: center;
-    }
+        /* h1, h2, h3{
+            margin-top: 50px;
+            padding-top: 10px;
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:#1E8449;
+        } */
 
-    body{
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-       text-align: center;
-    }
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+        }
 
     </style>
-<title>Login</title>
+<title>Cropventory: Login & Register</title>
 </head>
 <body>
     
-
+<h3>Welcome Farmer! Please Log in.</h3>
 <div class="flex-container">
-    <div class="mainDiv">
+    <div class="rowContainer">
         <form method="post" action="login.php">
            
             <div class="rowContainer">
                 
             </div>
-            <h3>Welcome Farmer! Please Log in.</h3>
             <div class="rowContainer">
                 <div class="col1">User Name:</div>
                 <div class="col2"><input type="text" name="userName" value="donald"></div> 
@@ -97,13 +100,12 @@
         
     </div>
 
-    
+    <h3>Register Here</h3>
     <div div class="rowContainer">
         <form method="post" action="cropRegistered.php">
             <div class="rowContainer">
 
             </div>
-            <h3>Register Here</h3>
             <div class="rowContainer">
                 <div class="col1">Email:</div>
                 <div class="col2"><input type="text" name="userName"></div> 
