@@ -116,7 +116,7 @@
         </form>
     </div>
 
-    <div class="col-sm-offset-2 col-sm-10"><a href="./cropHome.php">Home Page</a></div>
+    <div class="col-sm-offset-2 col-sm-10"><a href="./cropView.php">Enter Cropventory</a></div>
     
 
 </body>
