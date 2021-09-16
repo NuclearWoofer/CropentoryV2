@@ -1,5 +1,3 @@
-<?php include __DIR__ . '/../include/header.php'; ?>
-
 <?php
     
     include __DIR__ . '/model_crop.php';
@@ -14,7 +12,7 @@
 ?>
 <html lang="en">
 <head>
-  <title>Crops Inventory</title>
+  <title>Cropventory</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -92,7 +90,7 @@
         <br />
         <a href="./searchsort.php">Search and Sort Crops</a> 
         <br />
-        <a href="./cropHome.php">Home Page</a>
+        <a href="login.php">Logout</a>
     </div>
     </div>
 </body>
