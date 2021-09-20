@@ -38,8 +38,12 @@
         width: 260px;
     }
     .flex-container{
-        display: flex;
-        flex-direction: column;
+        float: left;
+        padding: 5px;
+    }
+    .container{
+        float: right;
+        padding: 5px;
     }
 
 
@@ -49,9 +53,8 @@
 
     <!--Adding Crops Feature-->
 <div class="flex-container">
-    <h2>Add Crops</h2>
-      
     <form class="form-horizontal" action="addCrop.php" method="post">
+    <h2>Add Crops</h2>
 <!--Date the crop was planted-->
     <div class="form-group">
         <label class="control-label col-sm-2" for="cropPlanted">Date Crop Planted</label>
