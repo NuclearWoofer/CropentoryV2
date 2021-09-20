@@ -51,6 +51,7 @@ if(isset($_POST['login'])){
     }
 
     
+<<<<<<< HEAD
 
     
     h1, h2, h3{
@@ -78,6 +79,60 @@ if(isset($_POST['login'])){
     <form method="post" action="login.php">
        
         <div class="rowContainer">
+=======
+        #mainDiv {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+        .col1 {width: 100px; float: left;}
+        .col2 {float: left;}
+        /* .rowContainer {clear: none; height: 40px; width: 500px;}  */
+        .error {margin-left: 100px; clear: left; color: red;}
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        
+
+        
+        h1, h2, h3{
+            margin-top: 50px;
+            padding-top: 10px;
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:#1E8449;
+        }
+
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+        }
+
+    </style>
+<title>Cropventory: Login & Register</title>
+</head>
+<body>
+    
+<h3>Welcome Farmer! Please Log in.</h3>
+<div class="flex-container">
+    <div id="mainDiv">
+        <form method="post" action="login.php">
+           
+            <div class="rowContainer">
+                
+            </div>
+            <div class="rowContainer">
+                <div class="col1">User Name:</div>
+                <div class="col2"><input type="text" name="userName" value="donald"></div> 
+            </div>
+            <div class="rowContainer">
+                <div class="col1">Password:</div>
+                <div class="col2"><input type="password" name="password" value="duck"></div> 
+            </div>
+              <div class="rowContainer">
+                <div class="col1">&nbsp;</div>
+                <div class="col2"><input type="submit" name="login" value="Login" class="btn btn-warning"></div> 
+            </div>
+>>>>>>> 420bd44639108c7596644f2f9882aa9f7c9886ac
             
         </div>
         <div class="rowContainer">
@@ -93,15 +148,44 @@ if(isset($_POST['login'])){
             <div class="col2"><input type="submit" name="login" value="Login" class="btn btn-warning"></div> 
         </div>
         
+<<<<<<< HEAD
     </form>
     
 </div>
+=======
+    </div>
+
+    <h3>Register Here</h3>
+    <div div class="rowContainer">
+        <form method="post" action="cropRegistered.php">
+            <div class="rowContainer">
+
+            </div>
+            <div class="rowContainer">
+                <div class="col1">Email:</div>
+                <div class="col2"><input type="text" name="userName"></div> 
+            </div>
+            <div class="rowContainer">
+                <div class="col1">Password:</div>
+                <div class="col2"><input type="password" name="password"></div> 
+            </div>
+            <div class="rowContainer">
+                <div class="col1">Farm Name:</div>
+                <div class="col2"><input type="text" name="farmName"></div> 
+            </div>
+              <div class="rowContainer">
+                <div class="col1">&nbsp;</div>
+                <div class="col2"><input type="submit" name="register" value="Register" class="btn btn-warning"></div> 
+            </div>
+            
+>>>>>>> 420bd44639108c7596644f2f9882aa9f7c9886ac
 
 <h3>Register Here</h3>
 <div div class="rowContainer">
     <form method="post" action="cropRegistered.php">
         <div class="rowContainer">
 
+<<<<<<< HEAD
         </div>
         <div class="rowContainer">
             <div class="col1">Email:</div>
@@ -127,6 +211,13 @@ if(isset($_POST['login'])){
 </div>
 <div class="col-sm-offset-2 col-sm-10"><a href="./cropView.php">Enter Cropventory</a></div>
 
+=======
+        </form>
+    </div>
+    </div>
+    <div class="col-sm-offset-2 col-sm-10"><a href="./cropView.php">Enter Cropventory</a></div>
+    
+>>>>>>> 420bd44639108c7596644f2f9882aa9f7c9886ac
 
 </body>
 </html>
