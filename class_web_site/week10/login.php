@@ -41,9 +41,11 @@
             border: 1px solid black;
             color: #fff;
             background: #7CCE44;
+            float: left;
+            width: 33.33%;
             padding: 12px;
-            display: inline-block;
-            flex-direction: column;
+            /*display: inline-block;*/
+            
         } 
         .col1 {width: 175px; float: left;}
         .col2 {float: left;}
