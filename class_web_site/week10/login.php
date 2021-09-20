@@ -75,7 +75,11 @@
 <title>Cropventory: Login & Register</title>
 </head>
 <body>
-    
+
+
+<div id="logo">
+    <img src="images/Cropventoryv2.png" alt="cropventory logo">
+</div>
 <h3>Welcome Farmer! Please Log in.</h3>
 <div class="flex-container">
     <div class="mainDiv">
