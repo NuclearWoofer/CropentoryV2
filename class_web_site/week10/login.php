@@ -39,8 +39,8 @@
     
         .mainDiv {
             border: 1px solid black;
-            color: #fff;
-            background: #7CCE44;
+            color: black;
+            background: #D3D3D3;
             padding: 12px;
             display: inline-block;
         } 
