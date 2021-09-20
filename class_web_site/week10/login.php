@@ -51,6 +51,7 @@
         .flex-container {
             width: 200px;
             display: flex;
+            flex-direction: column;
             justify-content: center;
         }
 
