@@ -41,11 +41,8 @@
             border: 1px solid black;
             color: #fff;
             background: #7CCE44;
-            float: left;
-            width: 33.33%;
             padding: 12px;
-            /*display: inline-block;*/
-            
+            display: inline-block;
         } 
         .col1 {width: 175px; float: left;}
         .col2 {float: left;}
@@ -53,13 +50,10 @@
         .error {margin-left: 100px; clear: left; color: red;} */
 
         .flex-container {
-            width: 400px;
-            
+            width: 200px;
             display: flex;
-            flex-direction: column;
-            /*display: flex;
-            flex-direction: column;
-            justify-content: center;*/
+            flex-direction: row;
+            justify-content: center;
         }
 
         
@@ -71,7 +65,6 @@
             padding-top: 10px;
             font-size: 40px;
             font-family: Arial, Helvetica, sans-serif;
-            font-weight: 100;
             color:#7CCE44;
         } 
 
