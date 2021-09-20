@@ -38,7 +38,7 @@
 
     
         .mainDiv {
-            border: 1px solid black;
+            
             color: black;
             font-size: large;
             background: #D3D3D3;
@@ -56,7 +56,10 @@
             flex-direction: row;
             justify-content: center;
         }
-
+        .logo{
+            height: 50px;
+            width: 100%;
+        }
         
 
         
