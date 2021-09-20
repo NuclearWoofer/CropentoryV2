@@ -38,7 +38,7 @@
 
     
         .mainDiv {
-            box-shadow: black;
+            box-shadow: 5px 5px 2px gray;
             color: black;
             font-size: large;
             background: #D3D3D3;
@@ -64,6 +64,8 @@
 
         
         h1, h2, h3{
+            
+            text-shadow: 2px 2px 1px gray;
             align-items: center;
             margin-top: 50px;
             padding-top: 10px;
