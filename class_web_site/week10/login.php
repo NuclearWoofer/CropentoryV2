@@ -54,6 +54,7 @@
 
         
         h1, h2, h3{
+            align-items: center;
             margin-top: 50px;
             padding-top: 10px;
             font-size: 40px;
@@ -72,7 +73,6 @@
 <body>
     
 <h3>Welcome Farmer! Please Log in.</h3>
-
 <div class="flex-container">
     <div id="mainDiv">
         <form method="post" action="login.php">
