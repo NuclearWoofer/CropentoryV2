@@ -64,8 +64,6 @@
 
         
         h1, h2, h3{
-            
-            text-shadow: 2px 2px 1px gray;
             align-items: center;
             margin-top: 50px;
             padding-top: 10px;
