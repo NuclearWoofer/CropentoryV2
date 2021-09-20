@@ -42,7 +42,7 @@
         /* #mainDiv {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;} */
         .col1 {width: 100px; float: left;}
         .col2 {float: left;}
-        /* .rowContainer {clear: none; height: 40px; width: 500px;}  */
+        .rowContainer {clear: none; height: 40px; width: 500px;}  
         .error {margin-left: 100px; clear: left; color: red;}
 
         .flex-container {
@@ -105,19 +105,19 @@
             <div class="rowContainer">
 
             </div>
-            <div class="flex-container">
+            <div class="rowContainer">
                 <div class="col1">Email:</div>
                 <div class="col2"><input type="text" name="userName"></div> 
             </div>
-            <div class="flex-container">
+            <div class="rowContainer">
                 <div class="col1">Password:</div>
                 <div class="col2"><input type="password" name="password"></div> 
             </div>
-            <div class="flex-container">
+            <div class="rowContainer">
                 <div class="col1">Farm Name:</div>
                 <div class="col2"><input type="text" name="farmName"></div> 
             </div>
-              <div class="flex-container">
+              <div class="rowContainer">
                 <div class="col1">&nbsp;</div>
                 <div class="col2"><input type="submit" name="register" value="Register" class="btn btn-warning"></div> 
             </div>
