@@ -39,7 +39,7 @@
     <style type="text/css">
 
     
-        #mainDiv {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+        /* #mainDiv {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;} */
         .col1 {width: 100px; float: left;}
         .col2 {float: left;}
         /* .rowContainer {clear: none; height: 40px; width: 500px;}  */
@@ -95,9 +95,10 @@
         </form>
         
     </div>
+    </div>
 
     <h3>Register Here</h3>
-    <div div class="rowContainer">
+    <div div class="flexContainer">
         <form method="post" action="cropRegistered.php">
             <div class="rowContainer">
 
@@ -122,7 +123,6 @@
 
 
         </form>
-    </div>
     </div>
     <div class="col-sm-offset-2 col-sm-10"><a href="./cropView.php">Enter Cropventory</a></div>
     
