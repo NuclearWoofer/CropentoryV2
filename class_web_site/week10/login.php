@@ -38,7 +38,7 @@
 
     
         .mainDiv {
-            
+            box-shadow: black;
             color: black;
             font-size: large;
             background: #D3D3D3;
@@ -57,7 +57,7 @@
             justify-content: center;
         }
         #logo{
-            height: 50px;
+            height: 230px;
             width: 100%;
         }
         
