@@ -38,6 +38,7 @@
 
     
         .mainDiv {
+            border: 1px solid black;
             color: #fff;
             background: #7CCE44;
             padding: 12px;
