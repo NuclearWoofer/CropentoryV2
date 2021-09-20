@@ -34,6 +34,9 @@
     th{
         color: maroon;
     }
+    .form-control{
+        width: 50px;
+    }
 
 
 </style>
