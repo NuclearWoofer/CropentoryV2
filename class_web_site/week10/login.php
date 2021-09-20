@@ -71,11 +71,11 @@
 </head>
 <body>
     
+<h3>Welcome Farmer! Please Log in.</h3>
 <div class="flex-container">
     <div id="mainDiv">
         <form method="post" action="login.php">
-        <h3>Welcome Farmer! Please Log in.</h3>
-
+           
             <div class="rowContainer">
                 
             </div>
