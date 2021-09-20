@@ -56,7 +56,7 @@
             flex-direction: row;
             justify-content: center;
         }
-        .logo{
+        #logo{
             height: 50px;
             width: 100%;
         }
