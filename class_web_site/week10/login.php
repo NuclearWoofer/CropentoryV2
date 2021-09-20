@@ -53,13 +53,13 @@
         
 
         
-       /* h1, h2, h3{
+        h1, h2, h3{
             margin-top: 50px;
             padding-top: 10px;
             font-size: 40px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             color:#1E8449;
-        } */
+        } 
 
         body{
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
