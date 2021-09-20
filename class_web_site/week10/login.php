@@ -92,11 +92,11 @@
             </div>
             <div class="rowContainer">
                 <div class="col1">User Name:</div>
-                <div class="col2"><input type="text" name="userName" value="donald"></div> 
+                <div class="col2"><input type="text" name="userName" ></div> 
             </div>
             <div class="rowContainer">
                 <div class="col1">Password:</div>
-                <div class="col2"><input type="password" name="password" value="duck"></div> 
+                <div class="col2"><input type="password" name="password" ></div> 
             </div>
               <div class="rowContainer">
                 <div class="col1">&nbsp;</div>
