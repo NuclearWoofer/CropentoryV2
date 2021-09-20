@@ -43,14 +43,13 @@
             padding: 12px;
             display: inline-block;
         } 
-        /* .col1 {width: 100px; float: left;}
+        .col1 {width: 100px; float: left;}
         .col2 {float: left;}
         .rowContainer {clear: none; height: 40px; width: 500px;}  
         .error {margin-left: 100px; clear: left; color: red;} */
 
         .flex-container {
             width: 200px;
-            border: 1px solid #2d2d2d;
             display: flex;
             justify-content: center;
         }
