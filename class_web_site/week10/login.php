@@ -39,10 +39,11 @@
     
         .mainDiv {
             border: 1px solid black;
-            color: black;
-            background: white;
+            color: #fff;
+            background: #7CCE44;
             padding: 12px;
             display: inline-block;
+            flex-direction: column;
         } 
         .col1 {width: 175px; float: left;}
         .col2 {float: left;}
@@ -50,9 +51,9 @@
         .error {margin-left: 100px; clear: left; color: red;} */
 
         .flex-container {
-            width: 200px;
+            width: 400px;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
         }
 
@@ -65,6 +66,7 @@
             padding-top: 10px;
             font-size: 40px;
             font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
             color:#7CCE44;
         } 
 
