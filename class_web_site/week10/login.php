@@ -37,16 +37,16 @@
     <style type="text/css">
 
     
-        #mainDiv {
+        .mainDiv {
             color: #fff;
             background: #2d2d2d;
             padding: 12px;
             display: inline-block;
         } 
-        .col1 {width: 100px; float: left;}
+        /* .col1 {width: 100px; float: left;}
         .col2 {float: left;}
         .rowContainer {clear: none; height: 40px; width: 500px;}  
-        .error {margin-left: 100px; clear: left; color: red;}
+        .error {margin-left: 100px; clear: left; color: red;} */
 
         .flex-container {
             width: 200px;
@@ -79,7 +79,7 @@
     
 <h3>Welcome Farmer! Please Log in.</h3>
 <div class="flex-container">
-    <div id="mainDiv">
+    <div class="mainDiv">
         <form method="post" action="login.php">
            
             <div class="rowContainer">
@@ -106,6 +106,7 @@
 
 <h3>Register Here</h3>
 <div class="flex-container">
+    <div class="mainDiv">
         <form method="post" action="cropRegistered.php">
             <div class="rowContainer">
 
@@ -127,8 +128,7 @@
                 <div class="col2"><input type="submit" name="register" value="Register" class="btn btn-warning"></div> 
             </div>
             
-
-
+        </div>
     </form>
 </div>
     <div class="col-sm-offset-2 col-sm-10"><a href="./cropView.php">Enter Cropventory</a></div>
