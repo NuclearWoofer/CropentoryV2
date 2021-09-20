@@ -1,8 +1,7 @@
-<?php include __DIR__ . '/../include/header.php'; ?>
 
 <html>
     <head>
-        <title>Home Page</title>
+        <title>Cropventory: Home</title>
         <style>
            
 
@@ -83,31 +82,5 @@
             </div>
             </div>
         </div>
-
-        <!-- added this for flare, got this info from the internet -->
-<div class="weatherWidget" >
-
-    <script>
-        window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
-        window.weatherWidgetConfig.push({
-            selector:".weatherWidget",
-            apiKey:"PWQEJXMBG4N8EJBLDBH35BXWS", 
-            location:"Providence, Rhode Island", 
-            unitGroup:"us", 
-            forecastDays:5, 
-            title:"Providence, Rhode Island", 
-            showTitle:true, 
-            showConditions:true
-        });
-        
-        (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-    </script>
-
-</div>
 
         </body>
