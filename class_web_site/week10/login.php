@@ -39,7 +39,7 @@
     <style type="text/css">
 
     
-        /* #mainDiv {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;} */
+         #mainDiv {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;} 
         .col1 {width: 100px; float: left;}
         .col2 {float: left;}
         .rowContainer {clear: none; height: 40px; width: 500px;}  
