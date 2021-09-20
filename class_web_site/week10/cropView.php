@@ -22,20 +22,24 @@
 <style>
     h1, h2, h3{
         padding-top: 10px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color:#1E8449;
+        font-family: Arial, Helvetica, sans-serif;
+        color:#7CCE44;
         text-align: center;
     }
     
     body{
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family: Arial, Helvetica, sans-serif;
         
     }
     th{
-        color: maroon;
+        color: #7CCE44;
     }
     .form-control{
-        width: 50px;
+        width: 260px;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
     }
 
 
