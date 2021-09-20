@@ -40,15 +40,16 @@
 
     
         #mainDiv {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;} 
-        .col1 {width: 100px; }
-        /*.col2 {float: left;} */
-        .rowContainer {height: 40px; width: 500px;}  
+        .col1 {width: 100px; float: left;}
+        .col2 {float: left;}
+        .rowContainer {clear: none; height: 40px; width: 500px;}  
         .error {margin-left: 100px; clear: left; color: red;}
 
         .flex-container {
             display: flex;
             flex-direction: row;
             align-items: center;
+            border: 1px solid black;
         }
 
         
