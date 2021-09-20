@@ -39,7 +39,7 @@
     
         .mainDiv {
             color: #fff;
-            background: #2d2d2d;
+            background: #7CCE44;
             padding: 12px;
             display: inline-block;
         } 
@@ -63,7 +63,7 @@
             padding-top: 10px;
             font-size: 40px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color:#1E8449;
+            color:#7CCE44;
         } 
 
         body{
