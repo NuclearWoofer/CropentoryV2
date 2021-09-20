@@ -37,8 +37,11 @@
     <style type="text/css">
 
     
-        #mainDiv {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            align-items: center;
+        #mainDiv {
+            color: #fff;
+            background: #2d2d2d;
+            padding: 12px;
+            display: inline-block;
         } 
         .col1 {width: 100px; float: left;}
         .col2 {float: left;}
@@ -46,10 +49,10 @@
         .error {margin-left: 100px; clear: left; color: red;}
 
         .flex-container {
+            width: 200px;
+            border: 1px solid #2d2d2d;
             display: flex;
-            flex-direction: row;
-            align-items: center;
-            border: 1px solid black;
+            justify-content: center;
         }
 
         
