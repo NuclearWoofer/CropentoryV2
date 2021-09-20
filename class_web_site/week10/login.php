@@ -63,12 +63,12 @@
             margin-top: 50px;
             padding-top: 10px;
             font-size: 40px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: Arial, Helvetica, sans-serif;
             color:#7CCE44;
         } 
 
         body{
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: Arial, Helvetica, sans-serif;
             text-align: center;
         }
 
