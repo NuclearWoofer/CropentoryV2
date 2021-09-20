@@ -40,6 +40,7 @@
         .mainDiv {
             border: 1px solid black;
             color: black;
+            font-size: large;
             background: #D3D3D3;
             padding: 12px;
             display: inline-block;
