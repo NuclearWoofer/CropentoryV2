@@ -54,8 +54,9 @@
 
         .flex-container {
             width: 400px;
-            float: left;
-            width: 33.33%;
+            
+            display: flex;
+            flex-direction: column;
             /*display: flex;
             flex-direction: column;
             justify-content: center;*/
