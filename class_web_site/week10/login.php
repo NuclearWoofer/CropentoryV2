@@ -53,13 +53,13 @@
         
 
         
-        h1, h2, h3{
+       /* h1, h2, h3{
             margin-top: 50px;
             padding-top: 10px;
             font-size: 40px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             color:#1E8449;
-        }
+        } */
 
         body{
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -71,8 +71,9 @@
 </head>
 <body>
     
-<h3>Welcome Farmer! Please Log in.</h3>
+
 <div class="flex-container">
+    <h3>Welcome Farmer! Please Log in.</h3>
     <div id="mainDiv">
         <form method="post" action="login.php">
            
@@ -97,8 +98,9 @@
     </div>
     </div>
 
-    <h3>Register Here</h3>
+    
     <div div class="flexContainer">
+    <h3>Register Here</h3>
         <form method="post" action="cropRegistered.php">
             <div class="rowContainer">
 
