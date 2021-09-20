@@ -39,7 +39,7 @@
     <style type="text/css">
 
     
-         #mainDiv {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;} 
+        #mainDiv {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;} 
         .col1 {width: 100px; float: left;}
         .col2 {float: left;}
         .rowContainer {clear: none; height: 40px; width: 500px;}  
@@ -71,9 +71,9 @@
 </head>
 <body>
     
+<h3>Welcome Farmer! Please Log in.</h3>
 
 <div class="flex-container">
-    <h3>Welcome Farmer! Please Log in.</h3>
     <div id="mainDiv">
         <form method="post" action="login.php">
            
@@ -96,11 +96,11 @@
         </form>
         
     </div>
-    </div>
+</div>
 
-    
-<div div class="flex-container">
-    <h3>Register Here</h3>
+
+<h3>Register Here</h3>
+<div class="flex-container">
         <form method="post" action="cropRegistered.php">
             <div class="rowContainer">
 
