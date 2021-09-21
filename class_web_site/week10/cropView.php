@@ -45,6 +45,8 @@
     .container{
         float: right;
         padding: 5px;
+        padding: 20px;
+        width: 50%;
     }
 
 
