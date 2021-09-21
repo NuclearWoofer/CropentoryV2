@@ -65,7 +65,7 @@
 
     <!--Adding Crops Feature-->
 <div class="flex-container">
-    <form class="form-horizontal" action="addCrop.php" method="post">
+    <form class="form-horizontal" action="cropView.php" method="post">
     <h2>Add Crops</h2>
 <!--Date the crop was planted-->
     <div class="form-group">
