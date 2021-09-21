@@ -118,7 +118,7 @@
 <h3>Register Here</h3>
 <div class="flex-container">
 <div class="mainDiv">
-    <form method="post" action="cropRegistered.php">
+    <form method="post" action="cropLogin.php">
         <div class="rowContainer">
 
         </div>
@@ -129,10 +129,6 @@
         <div class="rowContainer">
             <div class="col1">Password:</div>
             <div class="col2"><input type="password" name="password"></div> 
-        </div>
-        <div class="rowContainer">
-            <div class="col1">Farm Name:</div>
-            <div class="col2"><input type="text" name="farmName"></div> 
         </div>
           <div class="rowContainer">
             <div class="col1">&nbsp;</div>
