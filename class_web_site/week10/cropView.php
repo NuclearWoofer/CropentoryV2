@@ -134,7 +134,7 @@
             });
         </script>
             <thead>
-                <tr b-paginate="10">
+                <tr paginate="10">
                     <th>Crop ID</th>
                     <th>Crop/Plant Name</th>
                     <th>Date Planted</th>
