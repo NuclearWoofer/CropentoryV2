@@ -1,5 +1,5 @@
 <?php
-    
+    //Cropventory
     include __DIR__ . '/model_crop.php';
     include __DIR__ . '/functions.php';
     if (isPostRequest()) {
@@ -8,7 +8,7 @@
 
     }
     $crops = getCrops ();
-
+    //ADD Crops
     if (isPostRequest()) {
         $cropName = filter_input(INPUT_POST, 'cropName');
         $cropPlanted = filter_input(INPUT_POST, 'cropPlanted');
@@ -59,11 +59,39 @@
         padding: 20px;
         width: 75%;
     }
+    .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
 
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
 
 </style>
 
 <body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
 
     <!--Adding Crops Feature-->
 <div class="flex-container">
@@ -115,6 +143,7 @@
 </div>
 
 
+
     <!--Existing Inventory of Crops Feature-->
 
     <div class="container">
@@ -126,86 +155,12 @@
   
     <table class="table table-striped">
         <script>
-                function addPagerToTables(tables, rowsPerPage = 10) {
-
-    tables = 
-        typeof tables == "string"
-    ? document.querySelectorAll(tables)
-    : tables;
-
-    for (let table of tables) 
-        addPagerToTable(table, rowsPerPage);
-
-    }
-
-    function addPagerToTable(table, rowsPerPage = 10) {
-
-    let tBodyRows = table.querySelectorAll('tBody tr');
-    let numPages = Math.ceil(tBodyRows.length/rowsPerPage);
-
-    let colCount = 
-    [].slice.call(
-        table.querySelector('tr').cells
-    )
-    .reduce((a,b) => a + parseInt(b.colSpan), 0);
-
-    table
-    .createTFoot()
-    .insertRow()
-    .innerHTML = `<td colspan=${colCount}><div class="nav"></div></td>`;
-
-    if(numPages == 1)
-        return;
-
-    for(i = 0;i < numPages;i++) {
-
-        let pageNum = i + 1;
-
-        table.querySelector('.nav')
-        .insertAdjacentHTML(
-            'beforeend',
-            `<a href="#" rel="${i}">${pageNum}</a> `        
-        );
-
-    }
-
-    changeToPage(table, 1, rowsPerPage);
-
-    for (let navA of table.querySelectorAll('.nav a'))
-        navA.addEventListener(
-            'click', 
-            e => changeToPage(
-                table, 
-                parseInt(e.target.innerHTML), 
-                rowsPerPage
-            )
-        );
-
-    }
-
-    function changeToPage(table, page, rowsPerPage) {
-
-    let startItem = (page - 1) * rowsPerPage;
-    let endItem = startItem + rowsPerPage;
-    let navAs = table.querySelectorAll('.nav a');
-    let tBodyRows = table.querySelectorAll('tBody tr');
-
-    for (let nix = 0; nix < navAs.length; nix++) {
-
-        if (nix == page - 1)
-            navAs[nix].classList.add('active');
-        else 
-            navAs[nix].classList.remove('active');
-
-        for (let trix = 0; trix < tBodyRows.length; trix++) 
-            tBodyRows[trix].style.display = 
-                (trix >= startItem && trix < endItem)
-                ? 'table-row'
-                : 'none';  
-
-    }
-
-}
+            $(document).ready(function () {
+                 $('#dtBasicExample').DataTable({
+                "pagingType": "full_numbers"
+             });
+             $('.dataTables_length').addClass('bs-select');
+            });
         </script>
             <thead>
                 <tr>
