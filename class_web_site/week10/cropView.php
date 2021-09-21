@@ -38,12 +38,17 @@
         width: 260px;
     }
     .flex-container{
-        float: left;
-        padding: 5px;
+        display: flex;
+        
     }
-    .container{
-        float: right;
-        padding: 5px;
+    .flex-child{
+        flex: 1;
+        border: 2px solid black;
+
+    }
+
+    .flex-child:first-child{
+        margin-right: 20px;
     }
 
 
@@ -53,7 +58,7 @@
 
     <!--Adding Crops Feature-->
 <div class="flex-container">
-    <form class="form-horizontal" action="addCrop.php" method="post">
+    <form class="flex-child green" action="addCrop.php" method="post">
     <h2>Add Crops</h2>
 <!--Date the crop was planted-->
     <div class="form-group">
@@ -103,9 +108,9 @@
 
     <!--Existing Inventory of Crops Feature-->
 
-    <div class="container">
+<div class="flex-container">
         
-    <div class="col-sm-offset-2 col-sm-10">
+    <div class="flex-child blue">
         <h1>Inventory</h1>
     
    
@@ -156,9 +161,6 @@
         <br />
         <a href="login.php">Logout</a>
     </div>
-    </div>
+</div>
 </body>
-
 </html>
-
-<?php include __DIR__ . '/../include/footer.php'; ?>
