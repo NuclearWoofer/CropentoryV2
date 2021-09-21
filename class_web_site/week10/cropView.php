@@ -39,7 +39,8 @@
     }
     .flex-container{
         float: left;
-        padding: 5px;
+        padding: 20px;
+        width: 50%;
     }
     .container{
         float: right;
