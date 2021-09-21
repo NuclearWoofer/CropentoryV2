@@ -1,6 +1,4 @@
 <?php
-
-    
     include __DIR__ . '/model_crop.php';
     $action = filter_input(INPUT_POST, 'action');
     $fieldName = filter_input(INPUT_POST, 'fieldName');
@@ -13,14 +11,11 @@
     } else {
         $crops = getcrops ();  
     }
-
     if(isset($_POST['logout'])){
         session_destroy();
         header('Location: login.php');
     }
-
 ?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -30,10 +25,40 @@
             <meta charset="UTF-8">
     <style type="text/css">
         body {margin-left: 20px;}
+        .topnav {
+        overflow: hidden;
+        background-color: #333;
+    }
+
+        .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+
+        .topnav a.active {
+        background-color: #7CCE44;
+        color: white;
+        }
     </style>
         <title>Search and Sort Crops</title>
     </head>
     <body>
+    <div class="topnav">
+        <a class="active" href="./cropView.php">Cropventory</a>
+        <a href="Search & Sort">Search & Sort</a>
+        <a href="https://riphi.org/access-to-healthy-affordable-food/">Food Access Information</a>
+        <a href="https://docs.google.com/document/d/1KM2RRZQ-rZa960BIeNB8VeXAmAqnqM69fzUvrWVVyOA/edit?usp=sharing">Capstone Documentation</a>
+        <a href="./login.php">Logout</a>
+    </div>
  
         <?php
             include __DIR__ . '/includes/searchFrom.php';
@@ -41,11 +66,5 @@
             include __DIR__ . '/includes/view.php';
         ?>
     </body>
-
-   
-    <div style="padding: 10px;"><a href="./addCrop.php">Add Crops</a></div>
-    
-    <div class="padding: 10px;"><a href="./cropView.php">View Crops</a></div>
 </html>
-
 <?php include __DIR__ . '/../include/footer.php'; ?>

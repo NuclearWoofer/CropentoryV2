@@ -60,34 +60,36 @@
         width: 75%;
     }
     .topnav {
-  overflow: hidden;
-  background-color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+        overflow: hidden;
+        background-color: #333;
     }
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+    }
 
-.topnav a.active {
-  background-color: #7CCE44;
-  color: white;
-}
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .topnav a.active {
+        background-color: #7CCE44;
+        color: white;
+    }
 
 </style>
 
 <body>
     <div class="topnav">
-        <a class="active" href="#home">Home</a>
+        <a class="active" href="./cropView.php">Cropventory</a>
         <a href="Search & Sort">Search & Sort</a>
         <a href="https://riphi.org/access-to-healthy-affordable-food/">Food Access Information</a>
         <a href="https://docs.google.com/document/d/1KM2RRZQ-rZa960BIeNB8VeXAmAqnqM69fzUvrWVVyOA/edit?usp=sharing">Capstone Documentation</a>
@@ -136,7 +138,7 @@
                 if (isPostRequest()) {
                   echo "Plant successfully Planted!";
                 }
-            ?>-
+            ?>
             </div>
         </div>
     </form>
