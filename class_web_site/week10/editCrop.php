@@ -65,17 +65,48 @@
 <style>
     h2, h3{
         padding-top: 10px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color:#1E8449;
+        font-family: Arial, Helvetica, sans-serif;
+        color:#7CCE44;
         text-align: center;
+    }
+    .topnav {
+        font-family: Arial, Helvetica, sans-serif;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .topnav a.active {
+        background-color: #7CCE44;
+        color: white;
     }
    
  
 
 </style>
 <body>
-
-<div class="container" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+  <div class="topnav">
+        <a class="active" href="./cropView.php">Cropventory</a>
+        <a href="Search & Sort">Search & Sort</a>
+        <a href="https://riphi.org/access-to-healthy-affordable-food/">Food Access Information</a>
+        <a href="https://docs.google.com/document/d/1KM2RRZQ-rZa960BIeNB8VeXAmAqnqM69fzUvrWVVyOA/edit?usp=sharing">Capstone Documentation</a>
+        <a href="./login.php">Logout</a>
+  </div>
+  <div class="container" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
     
     <h2>Edit Crops</h2>
     <h3>Here we can edit our crops.</h3>

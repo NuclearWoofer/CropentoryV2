@@ -52,7 +52,7 @@
         color: white;
         }
     </style>
-        <title>Search and Sort Crops</title>
+        <title>Cropventory: Search & Sort</title>
     </head>
     <body>
     <div class="topnav">
@@ -70,4 +70,3 @@
         ?>
     </body>
 </html>
-<?php include __DIR__ . '/../include/footer.php'; ?>
