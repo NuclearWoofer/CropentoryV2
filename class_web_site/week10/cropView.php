@@ -27,15 +27,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script>
-            // Basic example
-            $(document).ready(function () {
-                 $('#dtBasicExample').DataTable({
-                "pagingType": "full_numbers"
-             });
-             $('.dataTables_length').addClass('bs-select');
-            });
-    </script>
+    
 
 </head>
 <style>
@@ -133,11 +125,16 @@
    
   
     <table class="table table-striped">
-        
+        <script>
+            $(document).ready(function () {
+                 $('#dtBasicExample').DataTable({
+                "pagingType": "full_numbers"
+             });
+             $('.dataTables_length').addClass('bs-select');
+            });
+        </script>
             <thead>
-                <tr>
-
-                    
+                <tr b-paginate="10">
                     <th>Crop ID</th>
                     <th>Crop/Plant Name</th>
                     <th>Date Planted</th>
