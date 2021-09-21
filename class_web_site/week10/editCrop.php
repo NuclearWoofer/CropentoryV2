@@ -55,7 +55,7 @@
 
 <html lang="en">
 <head>
-  <title>>Cropventory: Update Crop</title>
+  <title>Cropventory: Update Crop</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -130,14 +130,14 @@
       </div>
   <!--Date the crop was planted-->
       <div class="form-group">
-        <label class="control-label col-sm-2" for="cropPlanted" style="color:maroon;">Date Crop Planted: </label>
+        <label class="control-label col-sm-2" for="cropPlanted" style="color:#7CCE44;">Date Crop Planted: </label>
         <div class="col-sm-10">
           <input type="date" class="form-control" id="cropPlanted" placeholder="11/22/1963" name="cropPlanted" value="01/01/2001">
         </div>
       </div>
       <!--Quantity of crops-->
       <div class="form-group">
-        <label class="control-label col-sm-2" for="cropQty" style="color:maroon;">Quantity: </label>
+        <label class="control-label col-sm-2" for="cropQty" style="color:#7CCE44;">Quantity: </label>
         <div class="col-sm-10">
           <input type="text" class="form-control" id="cropQty" placeholder="Enter crop quantity" name="cropQty" <?= $cropQty; ?>>
         </div>
@@ -150,7 +150,7 @@
        <!--Submit Button-->
     <div class="form-group">        
       <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default"><?php echo $action; ?>Update This Crop!</button>
+        <button type="submit" class="btn btn-default">Update This Crop!</button>
        
       </div>
     </div>
