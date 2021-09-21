@@ -44,7 +44,7 @@
             background: #D3D3D3;
             padding: 12px;
             display: inline-block;
-            width: 50%;
+        
         } 
         .col1 {width: 175px; float: left;}
         .col2 {float: left;}
@@ -52,7 +52,7 @@
         .error {margin-left: 100px; clear: left; color: red;} 
 
         .flex-container {
-            width: 50%;
+            width: 200px;
             display: flex;
             flex-direction: row;
             justify-content: center;
