@@ -62,7 +62,7 @@
     .topnav {
   overflow: hidden;
   background-color: #333;
-}
+    }
 
 .topnav a {
   float: left;
@@ -79,7 +79,7 @@
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #7CCE44;
   color: white;
 }
 
