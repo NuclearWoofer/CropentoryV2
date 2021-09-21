@@ -40,13 +40,13 @@
     .flex-container{
         float: left;
         padding: 20px;
-        width: 50%;
+        width: 25%;
     }
     .container{
         float: right;
         padding: 5px;
         padding: 20px;
-        width: 50%;
+        width: 75%;
     }
 
 
