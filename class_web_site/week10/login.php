@@ -44,6 +44,7 @@
             background: #D3D3D3;
             padding: 12px;
             display: inline-block;
+            width: 50%;
         } 
         .col1 {width: 175px; float: left;}
         .col2 {float: left;}
@@ -51,7 +52,7 @@
         .error {margin-left: 100px; clear: left; color: red;} */
 
         .flex-container {
-            width: 200px;
+            width: 50%;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -113,9 +114,10 @@
 </div>
 
 
-<h3>Register Here</h3>
+
 <div class="flex-container">
     <div class="mainDiv">
+    <h3>Register Here</h3>
         <form method="post" action="cropRegistered.php">
             <div class="rowContainer">
 

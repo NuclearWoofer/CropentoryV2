@@ -9,7 +9,7 @@
     }
     $crops = getCrops ();
     //ADD Crops
-    if (isPostRequest()) {
+    elseif (isPostRequest()) {
         $cropName = filter_input(INPUT_POST, 'cropName');
         $cropPlanted = filter_input(INPUT_POST, 'cropPlanted');
         $cropQty = filter_input(INPUT_POST, 'cropQty');
@@ -131,12 +131,12 @@
 
         <div class="form-group">        
             <div class="col-sm-offset-2 col-sm-10">
-            <!--<button type="submit" class="btn btn-default">Plant this Plant!</button>-->
-            <!--<?php
-                //if (isPostRequest()) {
-                  //echo "Plant successfully Planted!";
-                //}
-            ?>-->
+            <button type="submit" class="btn btn-default">Plant this Plant!</button>
+            <?php
+                if (isPostRequest()) {
+                  echo "Plant successfully Planted!";
+                }
+            ?>-
             </div>
         </div>
     </form>
