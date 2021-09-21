@@ -109,7 +109,7 @@
   <div class="container" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
     
     <h2>Edit Crops</h2>
-    <form class="form-horizontal" action="editCrop.php" method="post">
+    <form class="form-horizontal" action="cropCrop.php" method="post">
     <input type="hidden" name="action" value="<?= $action; ?>">
       <input type="hidden" name="cropId" value="<?= $cropId; ?>">
             <!--dropdown of cropName-->
