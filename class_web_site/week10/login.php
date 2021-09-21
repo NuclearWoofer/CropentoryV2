@@ -1,13 +1,13 @@
 <?php
 
-include_once __DIR__ . "/model_crop.php";
-include_once __DIR__ . "/functions.php";
-include __DIR__ . "/model/db.php";
+    include_once __DIR__ . "/model_crop.php";
+    include_once __DIR__ . "/functions.php";
+    include __DIR__ . "/model/db.php";
 
 
-if(isset($_POST['login'])){
-    $userName = mysqli_real_escape_string($con,$_POST['userName']);
-    $password = mysqli_real_escape_string($con,$_POST['password']);
+/*     if(isset($_POST['login'])){
+        $userName = mysqli_real_escape_string($con,$_POST['userName']);
+        $password = mysqli_real_escape_string($con,$_POST['password']);
 
     if ($userName = !"" && $password = !""){
 
@@ -26,7 +26,29 @@ if(isset($_POST['login'])){
             echo "Invalid username and password";
         }
 
-    }
+    } */    
+    ;  
+    $userName = $_POST['user'];  
+    $password = $_POST['pass'];  
+      
+        //to prevent from mysqli injection  
+        $userName = stripcslashes($userName);  
+        $password = stripcslashes($password);  
+        $userName = mysqli_real_escape_string($con, $userName);  
+        $password = mysqli_real_escape_string($con, $password);  
+      
+        $sql = "select *from users where userName = '$userName' and password = '$password'";  
+        $result = mysqli_query($con, $sql);  
+        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
+        $count = mysqli_num_rows($result);  
+          
+        if($count == 1){  
+            echo "<h1><center> Login successful </center></h1>";  
+        }  
+        else{  
+            echo "<h1> Login failed. Invalid userName or password.</h1>";  
+        }     
+?>  
 
 }
 ?>
@@ -106,7 +128,7 @@ if(isset($_POST['login'])){
         </div>
           <div class="rowContainer">
             <div class="col1">&nbsp;</div>
-            <div class="col2"><input type="submit" name="login" value="Login"  href="login.php" class="btn btn-warning"></div> 
+            <div class="col2"><input  name="login" value="Login"  href="login.php" class="btn btn-warning"></div> 
         </div>
         
     </form>
