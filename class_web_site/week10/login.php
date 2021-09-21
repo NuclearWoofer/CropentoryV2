@@ -17,9 +17,11 @@ if(isset($_POST['login'])){
 
         $count = $row['cntUser'];
 
+        $result = checkLogin($userName, $password);
+
         if($count > 0){
             $_SESSION['userName'] = $userName;
-            header('Location: searchsort.php');
+            header('Location: cropView.php');
         }else{
             echo "Invalid username and password";
         }
