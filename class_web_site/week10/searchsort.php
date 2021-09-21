@@ -24,7 +24,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
             <meta charset="UTF-8">
     <style type="text/css">
-        body {margin-left: 20px;}
+        body { 
+         
+            font-family: Arial, Helvetica, sans-serif;
+        }
         .topnav {
         overflow: hidden;
         background-color: #333;
