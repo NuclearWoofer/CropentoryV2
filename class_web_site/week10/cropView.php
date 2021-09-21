@@ -8,6 +8,15 @@
 
     }
     $crops = getCrops ();
+
+    if (isPostRequest()) {
+        $cropName = filter_input(INPUT_POST, 'cropName');
+        $cropPlanted = filter_input(INPUT_POST, 'cropPlanted');
+        $cropQty = filter_input(INPUT_POST, 'cropQty');
+        
+           $result = addCrops ($cropName, $cropPlanted, $cropQty);
+           
+       }
     
 ?>
 <html lang="en">
@@ -60,7 +69,7 @@
     <h2>Add Crops</h2>
 <!--Date the crop was planted-->
     <div class="form-group">
-        <label class="control-label col-sm-2" for="cropPlanted">Date Crop Planted</label>
+        <label class="control-label col-sm-2" for="cropPlanted">Today's Date: </label>
         <div class="col-sm-10">
              <input type="date" class="form-control" id="cropPlanted" placeholder="11/22/1963" name="cropPlanted">
         </div>
@@ -74,7 +83,7 @@
     </div>
     <!--dropdown of cropName-->
         <div class="form-group">
-            <label class="control-label col-sm-2" for="cropName">Crop List</label>
+            <label class="control-label col-sm-2" for="cropName">Crop List: </label>
                 <div class="col-sm-10">
                     <select name="cropName" id="cropName">
                         <option value="Tomato">Tomato</option>
