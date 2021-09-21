@@ -49,7 +49,7 @@
         .col1 {width: 175px; float: left;}
         .col2 {float: left;}
         .rowContainer {clear: none; height: 40px; width: 500px;}  
-        .error {margin-left: 100px; clear: left; color: red;} */
+        .error {margin-left: 100px; clear: left; color: red;} 
 
         .flex-container {
             width: 50%;
