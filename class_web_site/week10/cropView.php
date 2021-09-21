@@ -90,7 +90,7 @@
 <body>
     <div class="topnav">
         <a class="active" href="./cropView.php">Cropventory</a>
-        <a href="Search & Sort">Search & Sort</a>
+        <a href="./searchsort.php">Search & Sort</a>
         <a href="https://riphi.org/access-to-healthy-affordable-food/">Food Access Information</a>
         <a href="https://docs.google.com/document/d/1KM2RRZQ-rZa960BIeNB8VeXAmAqnqM69fzUvrWVVyOA/edit?usp=sharing">Capstone Documentation</a>
         <a href="./login.php">Logout</a>
