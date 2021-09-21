@@ -55,7 +55,7 @@
 
 <html lang="en">
 <head>
-  <title><?= $action ?> Crops</title>
+  <title>>Cropventory: Update Crop</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -109,14 +109,12 @@
   <div class="container" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
     
     <h2>Edit Crops</h2>
-    <h3>Here we can edit our crops.</h3>
-        
     <form class="form-horizontal" action="editCrop.php" method="post">
     <input type="hidden" name="action" value="<?= $action; ?>">
       <input type="hidden" name="cropId" value="<?= $cropId; ?>">
             <!--dropdown of cropName-->
             <div class="form-group">
-         <label class="control-label col-sm-2" for="pwd" style="color:maroon;">Crop List</label>
+         <label class="control-label col-sm-2" for="pwd" style="color:#7CCE44;">Crop List</label>
          <div class="col-sm-10">
           <select name="cropName" id="cropName">
               <option value="Tomato">Tomato</option>
@@ -152,15 +150,11 @@
        <!--Submit Button-->
     <div class="form-group">        
       <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default"><?php echo $action; ?>Plant This Plant!</button>
+        <button type="submit" class="btn btn-default"><?php echo $action; ?>Update This Crop!</button>
        
       </div>
     </div>
     </form>
-    
-    <div class="col-sm-offset-2 col-sm-10"><a href="./cropView.php">View Crop Inventory</a></div>
-    <div class="col-sm-offset-2 col-sm-10"><a href="./cropHome.php">Home Page</a></div>
-
   </div>
 </body>
 </html>
