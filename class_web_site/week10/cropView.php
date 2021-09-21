@@ -21,12 +21,22 @@
 ?>
 <html lang="en">
 <head>
-  <title>Cropventory</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Cropventory</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script>
+            // Basic example
+            $(document).ready(function () {
+                 $('#dtBasicExample').DataTable({
+                "pagingType": "full_numbers"
+             });
+             $('.dataTables_length').addClass('bs-select');
+            });
+    </script>
+
 </head>
 <style>
     h1, h2, h3{
@@ -123,15 +133,7 @@
    
   
     <table class="table table-striped">
-        <script>
-            // Basic example
-            $(document).ready(function () {
-                 $('#dtBasicExample').DataTable({
-                "pagingType": "simple" // "simple" option for 'Previous' and 'Next' buttons only
-             });
-             $('.dataTables_length').addClass('bs-select');
-            });
-        </script>
+        
             <thead>
                 <tr>
 
