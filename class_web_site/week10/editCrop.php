@@ -103,7 +103,7 @@
         <a class="active" href="./cropView.php">Cropventory</a>
         <a href="Search & Sort">Search & Sort</a>
         <a href="https://riphi.org/access-to-healthy-affordable-food/">Food Access Information</a>
-        <a href="./images/capstoneDoc.pdf">Capstone Documentation</a>
+        <a href="./documentation.html">Capstone Documentation</a>
         <a href="./presentation.html">Presentation</a>
         <a href="./login.php">Logout</a>
   </div>

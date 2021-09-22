@@ -25,7 +25,7 @@
             <td><?php echo $row['cropName']; ?></td> 
             <td><?php echo $row['cropPlanted']; ?></td> 
             <td><?php echo $row['cropQty']; ?></td> 
-            <td><?php echo $row['cropEstHarvest']; ?></td> 
+            
         </tr>
     <?php endforeach; ?>
 </tbody>
