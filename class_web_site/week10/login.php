@@ -1,4 +1,35 @@
+<?php
 
+    include_once __DIR__ . "/model_crop.php";
+    include_once __DIR__ . "/functions.php";
+    include __DIR__ . "/model/db.php";
+
+
+    if(isset($_POST['login'])){
+        $userName = mysqli_real_escape_string($con,$_POST['userName']);
+        $password = mysqli_real_escape_string($con,$_POST['password']);
+
+    if ($userName = !"" && $password = !""){
+
+        $sql_query = "select count(0) as cntUser from users where userName='".$userName."' and password='".$password."'";
+        $result = mysqli_query($con,$sql_query);
+        $row = mysqli_fetch_array($result);
+
+        $count = $row['cntUser'];
+
+        $result = checkLogin($userName, $password);
+
+        if($count > 0){
+            $_SESSION['userName'] = $userName;
+            header('Location: cropView.php');
+        }else{
+            echo "Invalid username and password";
+        }
+
+    }
+//Adding comment to change
+}
+?>
 
 <!DOCTYPE html>
 <html>
